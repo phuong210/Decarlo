@@ -1,0 +1,392 @@
+/* variables */
+:root {
+    --white: #ffffff;
+    --black-text: #171719;
+    --pd-sc: 100px;
+    --bg-color: #f5f5f5;
+    --gray-cl: #555562;
+    --gray2-cl: #84848e;
+}
+.width-100 {
+    width: 100%;
+}
+.w-200 {
+    width: 200px;
+}
+.height-100 {
+    height: 100%;
+}
+/* font size */
+.fs-2 {
+    font-size: 2rem;
+}
+.fs-3 {
+    font-size: 3rem;
+}
+
+/* space */
+.pt-1 {
+    padding-top: 0.25rem;
+}
+.pr-1 {
+    padding-right: 0.25rem;
+}
+.pb-1 {
+    padding-bottom: 0.25rem;
+}
+.pl-1 {
+    padding-left: 0.25rem;
+}
+.pl-3 {
+    padding-left: 0.75rem;
+}
+.pr-3 {
+    padding-right: 0.75rem;
+}
+.pt-4 {
+    padding-top: 1rem;
+}
+.pb-4 {
+    padding-bottom: 1rem;
+}
+.pb-100 {
+    padding-bottom: 10rem;
+}
+.pb-15 {
+    padding-bottom: 1.5rem;
+}
+.pd-20 {
+    padding: 2rem;
+}
+.pb-20 {
+    padding-bottom: 2rem;
+}
+.pt-20 {
+    padding-top: 2rem;
+}
+.pr-20 {
+    padding-right: 2rem;
+}
+.pt-30 {
+    padding-top: 3rem;
+}
+.pb-40 {
+    padding-bottom: 4rem;
+}
+.pl-40 {
+    padding-left: 4rem;
+}
+.pr-40 {
+    padding-right: 4rem;
+}
+.pb-50 {
+    padding-bottom: 5rem;
+}
+.pb-70 {
+    padding-bottom: 7rem;
+}
+.pl-70 {
+    padding-left: 7rem;
+}
+.pt-130 {
+    padding-top: 13rem;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-left {
+    text-align: left;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.d-grid {
+    display: grid;
+}
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.d-flex {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+.flex-column {
+    flex-direction: column;
+}
+.text-center {
+    text-align: center;
+}
+
+.bg-color {
+    background: var(--bg-color);
+}
+/* navbar */
+.nav__mobile {
+    opacity: 0;
+    pointer-events: none;
+    width: 100vw;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    top: 125px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 300;
+    transition: 0.7s;
+}
+.nav__mobile.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu__mobile {
+    flex-direction: column;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background: var(--white);
+    box-shadow: inset 0px -1px 0px #ececec;
+}
+.menu__list {
+    margin: 30px auto;
+}
+.menu__list a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px;
+    color: var(--black-text);
+}
+.menu__list a.active {
+    transition: 0.7s;
+    opacity: 0.7;
+}
+/* section */
+.section {
+    padding-top: var(--pd-sc);
+    padding-bottom: var(--pd-sc);
+}
+@media screen and (max-width: 767px) {
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+/* button link */
+.btn {
+    color: var(--black-text);
+    background: var(--white);
+    text-transform: uppercase;
+    line-height: 1.7;
+    padding: 1.2rem 3.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-black {
+    background: var(--black-text);
+    color: var(--white);
+    padding: 1.3re 3.6rem;
+}
+.btn-pd43 {
+    padding-left: 4.3rem;
+    padding-right: 4.3rem;
+}
+.btn-border {
+    border: 1px solid #171719;
+    max-width: fit-content;
+}
+.btn:hover {
+    opacity: 0.7;
+}
+/* heading */
+.heading {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 600;
+    padding-bottom: 45px;
+}
+.hd__history {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 2px;
+}
+.hd__fs-30 {
+    font-size: 30px;
+    line-height: 45px;
+}
+.hd-3 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+    padding-top: 3.7rem;
+    padding-bottom: 0.5rem;
+}
+
+.text-gray {
+    color: var(--gray2-cl);
+    line-height: 1.7;
+}
+
+/* component product */
+.product__component-icon {
+    right: 2rem;
+    top: 2.2rem;
+}
+.product__component-title {
+    padding-top: 2rem;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 1rem;
+}
+.product__component-price {
+    color: var(--gray-cl);
+}
+.product__component-btn {
+    margin-top: 2rem;
+}
+
+/* link - arrow */
+.seeMore {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    line-height: 24px;
+    cursor: pointer;
+}
+.seeMore:hover {
+    opacity: 0.7;
+}
+.seeMore-black {
+    color: var(--black-text);
+}
+.seeMore span {
+    padding-right: 1rem;
+}
+.seeMore img {
+    width: 5px;
+    height: 9px;
+}
+/* wrapper card */
+.sc__wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* video */
+.video__component-btn {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* card img component */
+.cardImg__desc {
+    color: var(--gray2-cl);
+    /* padding-bottom: 70px; */
+    line-height: 1.7;
+}
+
+/* is background */
+.isBackground-heading {
+    color: var(--white);
+    line-height: 1.5;
+}
+.isBackground__desc {
+    color: #bababf;
+    line-height: 1.7;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.isBackground__desc-width {
+    max-width: 420px;
+}
+
+/* heading background */
+.heading-bg {
+    padding-top: 8.2rem;
+    padding-bottom: 8.2rem;
+    background: var(--bg-color);
+}
+.official__col {
+    margin-left: -1.5rem;
+}
+/* form input component */
+
+.form__input,
+.form__select,
+.form__textarea {
+    margin-top: 1rem;
+    border: 1px solid #ececec;
+    outline: unset;
+    background: var(--white);
+    padding: 1.8rem 2rem;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.form__input::placeholder,
+textarea::placeholder {
+    font-family: "Lato";
+    color: #babcc4;
+    padding: 1.8rem auto 1.8rem 2rem;
+    line-height: 1.7;
+}
+
+/* card border */
+.card__component-border {
+    border: 1px solid #ececec;
+    background: var(--white);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* component card 2 */
+.component__wrap2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.component__wrap2-content {
+    padding-inline: 9rem;
+}
+@media screen and (max-width: 767px) {
+    .component__wrap2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .component__wrap2-content {
+        padding-inline: 3rem;
+        padding-bottom: 6rem;
+    }
+    .component__wrap2-hd {
+        padding-top: 6rem;
+    }
+    .component__wrap2-btn {
+        margin-bottom: 6rem;
+    }
+}
