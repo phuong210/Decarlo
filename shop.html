@@ -16,53 +16,69 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="header width-100">
+    <header class="header w-100">
       <div class="header__top">
-        <div
-          class="container-fluid top__content d-flex justify-content-between align-items-center pt-4 pb-4"
-        >
-          <p class="header__top-text">FREE SHIPPING IN ITALY</p>
-          <div class="header__lang">
+        <div class="container-fluid header__top-content white-text relative">
+          <p class="h5 text-uppercase absolute middle">
+            FREE SHIPPING IN ITALY
+          </p>
+          <div class="header__lang absolute">
             <div
               class="lang__current d-flex justify-content-between align-items-center"
             >
-              <p class="pr-3">Italian</p>
-              <img src="./img/arrow.svg" alt="DECARLO" />
+              <p class="h5 cursor-pointer">Italian</p>
+              <i
+                class="pl-075 d-flex justify-content-between align-items-center"
+                ><img
+                  class="cursor-pointer"
+                  src="./img/arrow.svg"
+                  alt="DECARLO"
+              /></i>
             </div>
             <ul class="lang__option">
-              <li>Vietnam</li>
+              <li class="h5 cursor-pointer">Vietnam</li>
+              <li class="h5 cursor-pointer">Russian</li>
+              <li class="h5 cursor-pointer">English</li>
             </ul>
           </div>
         </div>
       </div>
       <div class="header__bottom">
         <div
-          class="container-fluid bottom__content d-flex justify-content-between align-items-center"
+          class="container-fluid d-flex justify-content-between align-items-center pt-25 pb-25"
         >
-          <a href="/" class="header__bottom-logo cursor-pointer"
-            ><img src="./img/logo.svg" alt=""
+          <a href="/" class="cursor-pointer header__bottom-logo"
+            ><img class="" src="./img/logo.svg" alt=""
           /></a>
           <ul
             class="header__bottom-menu d-flex justify-content-between align-items-center flex-wrap text-uppercase cursor-pointer"
           >
-            <li class="height-100">
-              <a href="./shop.html" class="height-100">shop</a>
+            <li class="hg-100">
+              <a href="./shop.html" class="h5 pr-25 pl-25">shop</a>
             </li>
-            <li class="height-100"><a href="./history.html">our history</a></li>
-            <li class="height-100">
-              <a href="./product.html">JEWELERY PRODUCTION</a>
+            <li class="hg-100">
+              <a href="./history.html" class="h5 pr-25 pl-25">our history</a>
             </li>
-            <li class="height-100">
-              <a href="./dealer.html">BECOME A DEALER</a>
+            <li class="hg-100">
+              <a href="./product.html" class="h5 pr-25 pl-25"
+                >JEWELERY PRODUCTION</a
+              >
             </li>
-            <li class="height-100"><a href="./contact.html">CONTACT</a></li>
+            <li class="hg-100">
+              <a href="./dealer.html" class="h5 pr-25 pl-25">BECOME A DEALER</a>
+            </li>
+            <li class="hg-100">
+              <a href="./contact.html" class="h5 pr-25 pl-25">CONTACT</a>
+            </li>
           </ul>
           <div
-            class="header__bottom-icons d-flex justify-content-between align-items-center cursor-pointer"
+            class="d-flex justify-content-between align-items-center cursor-pointer"
           >
             <i><img src="./img/search.svg" alt="DECARLO" /> </i>
-            <i><img src="./img/heart.svg" alt="DECARLO" /></i>
-            <i><img src="./img/user.svg" alt="DECARLO" /> </i>
+            <i class="pl-25 pr-25"
+              ><img src="./img/heart.svg" alt="DECARLO"
+            /></i>
+            <i class="pr-25"><img src="./img/user.svg" alt="DECARLO" /> </i>
             <i><img src="./img/store.svg" alt="DECARLO" /> </i>
             <div class="btnmenu relative cursor-pointer"><span></span></div>
           </div>
@@ -70,21 +86,31 @@
       </div>
     </header>
     <nav class="nav__mobile">
-      <ul class="menu__mobile width-100">
-        <li class="menu__list"><a href="./shop.html">shop</a></li>
-        <li class="menu__list"><a href="./history.html">our history</a></li>
+      <ul class="menu__mobile w-100">
         <li class="menu__list">
-          <a href="./product.html">JEWELERY PRODUCTION</a>
+          <a href="./shop.html" class="text-uppercase">shop</a>
         </li>
-        <li class="menu__list"><a href="./dealer.html">BECOME A DEALER</a></li>
-        <li class="menu__list"><a href="./contact.html">CONTACT</a></li>
+        <li class="menu__list">
+          <a href="./history.html" class="text-uppercase">our history</a>
+        </li>
+        <li class="menu__list">
+          <a href="./product.html" class="text-uppercase"
+            >JEWELERY PRODUCTION</a
+          >
+        </li>
+        <li class="menu__list">
+          <a href="./dealer.html" class="text-uppercase">BECOME A DEALER</a>
+        </li>
+        <li class="menu__list">
+          <a href="./contact.html" class="text-uppercase">CONTACT</a>
+        </li>
       </ul>
     </nav>
     <main>
-      <section class="shop__banner text-left">
+      <section class="component__banner shop__banner">
         <div class="container">
-          <h2 class="fw-600 isBackground-heading fs-3">RINGS</h2>
-          <p class="isBackground__desc isBackground__desc-width">
+          <h2 class="h3 white-text text-uppercase pb-20">RINGS</h2>
+          <p class="gray-text component__banner-desc pb-30 shop__banner-desc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididu
           </p>
@@ -95,17 +121,19 @@
           <div
             class="shop__desc d-flex justify-content-between align-items-center"
           >
-            <p class="text-gray">There are 30 products</p>
+            <p class="gray-text">There are 30 products</p>
             <div
               class="shop__filter d-flex justify-content-between align-items-center"
             >
-              <div
-                class="shop__filter-sort d-flex align-items-center justify-content-between"
-              >
-                <label for="" class="text-uppercase width-100">SORT BY :</label>
+              <div class="d-flex align-items-center justify-content-between">
+                <label
+                  for=""
+                  class="text-uppercase w-100 shop__filter-title fw-600"
+                  >SORT BY :</label
+                >
                 <select
                   style="width: 100%"
-                  class="shop__select"
+                  class="shop__select fw-600"
                   aria-label="Default select example"
                 >
                   <option selected>FROM A TO Z</option>
@@ -113,149 +141,145 @@
                   <option value="2">Two</option>
                   <option value="3">Three</option>
                 </select>
-                <!-- <p class="pr-20">SORT BY : FROM A TO Z</p>
-                <div class="cursor-pointer">
-                  <img src="./img/arrowDownBlack.svg" alt="DECARLO" />
-                </div> -->
               </div>
-              <p class="pl-70">FILTER</p>
+              <p class="pl-70 shop__filter-title fw-600">FILTER</p>
             </div>
           </div>
-          <div class="shop__product d-grid">
-            <div class="product__wrap-card product__component">
-              <div class="card__img relative">
+          <div class="component__product">
+            <div class="component__product-item">
+              <div class="relative">
                 <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
-                <div class="product__component-icon absolute cursor-pointer">
+                <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
               </div>
               <div
-                class="card__content d-flex flex-column align-items-center justify-content-center"
+                class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="product__component-title fw-600">PRODUCT NAME</p>
-                <span class="product__component-price">$99.99</span>
-                <a href="" class="product__component-btn btn btn-border"
-                  >add to card</a
-                >
+                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
+                <span class="component__product-price gray-text">$99.99</span>
+                <div class="button pt-20">
+                  <a href="" class="button__text button-border">add to card</a>
+                </div>
               </div>
             </div>
-            <div class="product__wrap-card product__component">
-              <div class="card__img relative">
+            <div class="component__product-item">
+              <div class="relative">
                 <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
-                <div class="product__component-icon absolute cursor-pointer">
+                <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
               </div>
               <div
-                class="card__content d-flex flex-column align-items-center justify-content-center"
+                class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="product__component-title fw-600">PRODUCT NAME</p>
-                <span class="product__component-price">$99.99</span>
-                <a href="" class="product__component-btn btn btn-border"
-                  >add to card</a
-                >
+                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
+                <span class="component__product-price gray-text">$99.99</span>
+                <div class="button pt-20">
+                  <a href="" class="button__text button-border">add to card</a>
+                </div>
               </div>
             </div>
-            <div class="product__wrap-card product__component">
-              <div class="card__img relative">
+            <div class="component__product-item">
+              <div class="relative">
                 <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
-                <div class="product__component-icon absolute cursor-pointer">
+                <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
               </div>
               <div
-                class="card__content d-flex flex-column align-items-center justify-content-center"
+                class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="product__component-title fw-600">PRODUCT NAME</p>
-                <span class="product__component-price">$99.99</span>
-                <a href="" class="product__component-btn btn btn-border"
-                  >add to card</a
-                >
+                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
+                <span class="component__product-price gray-text">$99.99</span>
+                <div class="button pt-20">
+                  <a href="" class="button__text button-border">add to card</a>
+                </div>
               </div>
             </div>
-            <div class="product__wrap-card product__component">
-              <div class="card__img relative">
+            <div class="component__product-item">
+              <div class="relative">
                 <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
-                <div class="product__component-icon absolute cursor-pointer">
+                <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
               </div>
               <div
-                class="card__content d-flex flex-column align-items-center justify-content-center"
+                class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="product__component-title fw-600">PRODUCT NAME</p>
-                <span class="product__component-price">$99.99</span>
-                <a href="" class="product__component-btn btn btn-border"
-                  >add to card</a
-                >
+                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
+                <span class="component__product-price gray-text">$99.99</span>
+                <div class="button pt-20">
+                  <a href="" class="button__text button-border">add to card</a>
+                </div>
               </div>
             </div>
-            <div class="product__wrap-card product__component">
-              <div class="card__img relative">
+            <div class="component__product-item">
+              <div class="relative">
                 <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
-                <div class="product__component-icon absolute cursor-pointer">
+                <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
               </div>
               <div
-                class="card__content d-flex flex-column align-items-center justify-content-center"
+                class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="product__component-title fw-600">PRODUCT NAME</p>
-                <span class="product__component-price">$99.99</span>
-                <a href="" class="product__component-btn btn btn-border"
-                  >add to card</a
-                >
+                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
+                <span class="component__product-price gray-text">$99.99</span>
+                <div class="button pt-20">
+                  <a href="" class="button__text button-border">add to card</a>
+                </div>
               </div>
             </div>
-            <div class="product__wrap-card product__component">
-              <div class="card__img relative">
+            <div class="component__product-item">
+              <div class="relative">
                 <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
-                <div class="product__component-icon absolute cursor-pointer">
+                <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
               </div>
               <div
-                class="card__content d-flex flex-column align-items-center justify-content-center"
+                class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="product__component-title fw-600">PRODUCT NAME</p>
-                <span class="product__component-price">$99.99</span>
-                <a href="" class="product__component-btn btn btn-border"
-                  >add to card</a
-                >
+                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
+                <span class="component__product-price gray-text">$99.99</span>
+                <div class="button pt-20">
+                  <a href="" class="button__text button-border">add to card</a>
+                </div>
               </div>
             </div>
-            <div class="product__wrap-card product__component">
-              <div class="card__img relative">
+            <div class="component__product-item">
+              <div class="relative">
                 <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
-                <div class="product__component-icon absolute cursor-pointer">
+                <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
               </div>
               <div
-                class="card__content d-flex flex-column align-items-center justify-content-center"
+                class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="product__component-title fw-600">PRODUCT NAME</p>
-                <span class="product__component-price">$99.99</span>
-                <a href="" class="product__component-btn btn btn-border"
-                  >add to card</a
-                >
+                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
+                <span class="component__product-price gray-text">$99.99</span>
+                <div class="button pt-20">
+                  <a href="" class="button__text button-border">add to card</a>
+                </div>
               </div>
             </div>
-            <div class="product__wrap-card product__component">
-              <div class="card__img relative">
+            <div class="component__product-item">
+              <div class="relative">
                 <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
-                <div class="product__component-icon absolute cursor-pointer">
+                <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
               </div>
               <div
-                class="card__content d-flex flex-column align-items-center justify-content-center"
+                class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="product__component-title fw-600">PRODUCT NAME</p>
-                <span class="product__component-price">$99.99</span>
-                <a href="" class="product__component-btn btn btn-border"
-                  >add to card</a
-                >
+                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
+                <span class="component__product-price gray-text">$99.99</span>
+                <div class="button pt-20">
+                  <a href="" class="button__text button-border">add to card</a>
+                </div>
               </div>
             </div>
           </div>
@@ -340,7 +364,6 @@
         </p>
       </div>
     </footer>
-
     <script src="./js/main.js"></script>
   </body>
 </html>

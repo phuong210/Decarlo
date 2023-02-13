@@ -363,6 +363,9 @@ input.form-control:focus {
     padding-top: 17.5rem;
     padding-bottom: 17.5rem;
 }
+.product__desc {
+    color: var(--gray-cl);
+}
 @media screen and (max-width: 767px) {
     .product__clean-img {
         order: -1;
@@ -376,13 +379,22 @@ input.form-control:focus {
     padding-top: 17.5rem;
     padding-bottom: 17.5rem;
 }
+.shop__banner-desc {
+    max-width: 420px;
+}
 
 /* section product */
 .shop__desc {
     padding-bottom: 5.8rem;
 }
+.shop__filter-title {
+    font-size: 16px;
+    line-height: 1.2;
+}
 .shop__select {
     border: unset;
+    font-size: 16px;
+    line-height: 1.2;
 }
 .shop__product {
     grid-template-columns: repeat(4, 1fr);

@@ -129,8 +129,17 @@
 .pb-30 {
     padding-bottom: 3rem;
 }
+.pt-40 {
+    padding-top: 4rem;
+}
+.pr-40 {
+    padding-right: 4rem;
+}
 .pb-40 {
     padding-bottom: 4rem;
+}
+.pl-40 {
+    padding-left: 4rem;
 }
 .pb-45 {
     padding-bottom: 4.5rem;
@@ -140,6 +149,9 @@
 }
 .pb-50 {
     padding-bottom: 5rem;
+}
+.pb-55 {
+    padding-bottom: 5.5rem;
 }
 .pl-70 {
     padding-left: 7rem;
