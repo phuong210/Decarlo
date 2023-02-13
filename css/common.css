@@ -48,7 +48,11 @@
     font-size: 14px;
     line-height: 1.7;
 }
-
+@media screen and (max-width: 767px) {
+    .h1 {
+        font-size: 20px;
+    }
+}
 /* text */
 .gray-text {
     font-size: 14px;
@@ -66,6 +70,9 @@
 }
 .text-uppercase {
     text-transform: uppercase;
+}
+.text-line {
+    text-decoration-line: underline;
 }
 .cursor-pointer {
     cursor: pointer;
@@ -92,6 +99,15 @@
 }
 .pb-10 {
     padding-bottom: 1rem;
+}
+.pl-10 {
+    padding-left: 1rem;
+}
+.pl-15 {
+    padding-left: 1.5rem;
+}
+.pr-15 {
+    padding-right: 1.5rem;
 }
 .pb-15 {
     padding-bottom: 1.5rem;
@@ -147,12 +163,19 @@
 .pt-50 {
     padding-top: 5rem;
 }
+.pr-50 {
+    padding-right: 5rem;
+}
 .pb-50 {
     padding-bottom: 5rem;
+}
+.pl-50 {
+    padding-left: 5rem;
 }
 .pb-55 {
     padding-bottom: 5.5rem;
 }
+
 .pl-70 {
     padding-left: 7rem;
 }
@@ -233,7 +256,22 @@
         padding-bottom: 40px;
     }
 }
-
+/* heading responsive */
+@media screen and (max-width: 767px) {
+    .heading-mobile {
+        font-size: 20px;
+        line-height: 1.5;
+        padding-bottom: 2.5rem;
+    }
+    .heading2-mobile {
+        font-size: 20px;
+        line-height: 1.5;
+        padding-bottom: 2rem;
+    }
+    .desc-mobile {
+        padding-bottom: 3rem;
+    }
+}
 /* button */
 .button {
     margin-top: 1.2rem;
@@ -256,12 +294,25 @@
     color: var(--white);
     padding: 1.3rem 3.6rem;
 }
+@media screen and (max-width: 767px) {
+    .button__text {
+        padding: 0.8rem 1.4rem;
+    }
+}
 
 /* heading - background */
 .heading-bg {
     padding-top: 8.2rem;
     padding-bottom: 8.2rem;
     background: var(--bg-gray);
+}
+@media screen and (max-width: 767px) {
+    .heading-bg {
+        font-size: 18px;
+        line-height: 1.5;
+        padding-top: 5.6rem;
+        padding-bottom: 5.6rem;
+    }
 }
 
 /* component mid */
@@ -308,7 +359,7 @@
     padding-top: 13.3rem;
 }
 .card__content-btn {
-    padding-top: 7rem;
+    padding-top: 6rem;
 }
 @media screen and (max-width: 991px) {
     .component__card {
@@ -320,6 +371,14 @@
     }
     .card__content-hd {
         padding-top: 6rem;
+    }
+}
+
+/* component img-video */
+@media screen and (max-width: 767px) {
+    .component__video-icon {
+        width: 28px;
+        height: 28px;
     }
 }
 
@@ -337,18 +396,27 @@
 .component__product-price {
     color: var(--gray1-cl);
 }
-
+@media screen and (max-width: 767px) {
+    .component__product-item p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
 /* component banner */
 .component__banner {
-    /* background: url(../img/collection.jpg) top center no-repeat; */
     background-size: cover;
     padding-top: 18.5rem;
     padding-bottom: 18.5rem;
 }
 @media screen and (max-width: 767px) {
-    .component__banner {
-        padding-top: 7rem;
-        padding-bottom: 7rem;
+    /* .component__banner {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    } */
+    .component__banner h2 {
+        font-size: 18px;
+        padding-bottom: 0.5rem;
     }
 }
 
@@ -490,9 +558,10 @@ textarea::placeholder {
 }
 .menu__mobile {
     flex-direction: column;
-    top: 14%;
+    top: -10px;
+    /* top: 30%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     position: absolute;
     background: var(--white);
     box-shadow: inset 0px -1px 0px #ececec;

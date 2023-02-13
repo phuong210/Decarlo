@@ -19,24 +19,26 @@
   <body>
     <header class="header w-100">
       <div class="header__top">
-        <div class="container-fluid header__top-content white-text relative">
-          <p class="h5 text-uppercase absolute middle">
-            FREE SHIPPING IN ITALY
-          </p>
-          <div class="header__lang absolute">
+        <div
+          class="container-fluid header__top-content white-text d-flex justify-content-between"
+        >
+          <div class="header__top-item"></div>
+          <div class="h5 text-uppercase header__top-hd relative">
+            <p class="">FREE SHIPPING IN ITALY</p>
+          </div>
+          <div class="header__lang">
             <div
-              class="lang__current d-flex justify-content-between align-items-center"
+              class="lang__current d-flex justify-content-between align-items-center relative"
             >
               <p class="h5 cursor-pointer">Italian</p>
-              <i
-                class="pl-075 d-flex justify-content-between align-items-center"
+              <i class="pl-10 d-flex justify-content-between align-items-center"
                 ><img
                   class="cursor-pointer"
                   src="./img/arrow.svg"
                   alt="DECARLO"
               /></i>
             </div>
-            <ul class="lang__option">
+            <ul class="lang__option absolute">
               <li class="h5 cursor-pointer">Vietnam</li>
               <li class="h5 cursor-pointer">Russian</li>
               <li class="h5 cursor-pointer">English</li>
@@ -44,9 +46,9 @@
           </div>
         </div>
       </div>
-      <div class="header__bottom">
+      <div class="header__bottom pt-25 pb-25">
         <div
-          class="container-fluid d-flex justify-content-between align-items-center pt-25 pb-25"
+          class="container-fluid d-flex justify-content-between align-items-center"
         >
           <a href="/" class="cursor-pointer header__bottom-logo"
             ><img class="" src="./img/logo.svg" alt=""
@@ -156,45 +158,47 @@
       </section>
       <section class="section__category section">
         <div class="container">
-          <h2 class="h1 text-center pb-45">SHOP BY CATEGORY</h2>
+          <h2 class="h1 heading-mobile text-center pb-45">SHOP BY CATEGORY</h2>
           <div class="category__wrap d-grid">
             <div class="w-100 relative">
               <div class="component__img">
                 <img class="width-100" src="./img/category1.jpg" alt="" />
               </div>
-              <div class="button absolute category__wrap-btn middle-X">
-                <a href="./productDetail.html" class="h5 button__text">ring</a>
-              </div>
+              <a
+                href="./productDetail.html"
+                class="category__wrap-btn absolute category__wrap-btn middle-X d-flex justify-content-center align-items-center cursor-pointer h5 text-uppercase"
+                >ring</a
+              >
             </div>
             <div class="w-100 relative">
               <div class="component__img">
                 <img class="width-100" src="./img/category2.jpg" alt="" />
               </div>
-              <div class="button absolute category__wrap-btn middle-X">
-                <a href="./productDetail.html" class="h5 button__text"
-                  >BRACELETS</a
-                >
-              </div>
+              <a
+                href="./productDetail.html"
+                class="category__wrap-btn absolute category__wrap-btn middle-X d-flex justify-content-center align-items-center cursor-pointer h5 text-uppercase"
+                >BRACELETS</a
+              >
             </div>
             <div class="w-100 relative">
               <div class="component__img">
                 <img class="width-100" src="./img/category3.jpg" alt="" />
               </div>
-              <div class="button absolute category__wrap-btn middle-X">
-                <a href="./productDetail.html" class="h5 button__text"
-                  >EARINGS</a
-                >
-              </div>
+              <a
+                href="./productDetail.html"
+                class="category__wrap-btn absolute category__wrap-btn middle-X d-flex justify-content-center align-items-center cursor-pointer h5 text-uppercase"
+                >EARINGS</a
+              >
             </div>
             <div class="w-100 relative">
               <div class="component__img">
                 <img class="width-100" src="./img/category4.jpg" alt="" />
               </div>
-              <div class="button absolute category__wrap-btn middle-X">
-                <a href="./productDetail.html" class="h5 button__text"
-                  >NECKLACE</a
-                >
-              </div>
+              <a
+                href="./productDetail.html"
+                class="category__wrap-btn absolute category__wrap-btn middle-X d-flex justify-content-center align-items-center cursor-pointer h5 text-uppercase"
+                >NECKLACE</a
+              >
             </div>
           </div>
         </div>
@@ -221,7 +225,7 @@
             </div>
             <div class="component__card-content w-100 hg-100">
               <div class="card__content">
-                <h2 class="h1 card__content-hd">
+                <h2 class="h1 card__content-hd heading-mobile">
                   WE FOCUS ON WHAT’S REALLY IMPORTANT
                 </h2>
                 <p class="gray-text pt-20">
@@ -240,7 +244,7 @@
       </section>
       <section class="section__product section">
         <div class="container">
-          <h2 class="h1 text-center pb-45">FEATURED PRODUCT</h2>
+          <h2 class="h1 text-center pb-45 heading-mobile">FEATURED PRODUCT</h2>
           <div class="component__product product__wrap">
             <div class="component__product-item">
               <div class="relative">
@@ -332,7 +336,7 @@
       </section>
       <section class="section__services section bg-color">
         <div class="container">
-          <h2 class="h1 text-center pb-45">OUR SERVICES</h2>
+          <h2 class="h1 text-center pb-45 heading-mobile">OUR SERVICES</h2>
           <div class="component__services d-grid">
             <div class="component__services-item text-center pt-50 pb-50">
               <img src="./img/parcel.svg" alt="DECARLO" />
@@ -401,7 +405,7 @@
           <div class="footer__middle-list">
             <p class="h5 white-text">CUSTOMER CARE</p>
             <ul>
-              <li class="pt-30">
+              <li class="pt-30 footer__list-item">
                 <a href="" class="gray-text">Track your order</a>
               </li>
               <li>
@@ -412,7 +416,9 @@
           <div class="footer__middle-list">
             <p class="h5 white-text">LEGAL INFORMATION:</p>
             <ul>
-              <li class="pt-30 gray-text">Company name: De Carlo Nicholas</li>
+              <li class="pt-30 gray-text footer__list-item">
+                Company name: De Carlo Nicholas
+              </li>
               <li class="gray-text">VAT number: 07020260480</li>
               <li class="gray-text">REA: FI-674952</li>
               <li class="footer__address gray-text">
@@ -424,7 +430,7 @@
           <div class="footer__middle-list">
             <p class="h5 white-text">LEGAL TERMS:</p>
             <ul>
-              <li class="pt-30">
+              <li class="pt-30 footer__list-item">
                 <a href="" class="gray-text">Informazioni legali</a>
               </li>
               <li class="w-200">
@@ -438,7 +444,7 @@
           </div>
           <div class="footer__middle-list">
             <p class="h5 white-text">SUBSCRIBE FOR NEWSLETTER</p>
-            <div class="d-flex w-100 pb-70 pt-30">
+            <div class="d-flex w-100 pb-70 pt-30 footer__list-item">
               <input
                 type="text"
                 class="form-control w-100"

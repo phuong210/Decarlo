@@ -16,19 +16,29 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="header width-100">
+    <header class="header w-100">
       <div class="header__top">
         <div class="container-fluid header__top-content white-text relative">
           <p class="h5 text-uppercase absolute middle">
             FREE SHIPPING IN ITALY
           </p>
           <div class="header__lang absolute">
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="pr-3">Italian</p>
-              <img src="./img/arrow.svg" alt="DECARLO" />
+            <div
+              class="lang__current d-flex justify-content-between align-items-center"
+            >
+              <p class="h5 cursor-pointer">Italian</p>
+              <i
+                class="pl-075 d-flex justify-content-between align-items-center"
+                ><img
+                  class="cursor-pointer"
+                  src="./img/arrow.svg"
+                  alt="DECARLO"
+              /></i>
             </div>
             <ul class="lang__option">
-              <li>Vietnam</li>
+              <li class="h5 cursor-pointer">Vietnam</li>
+              <li class="h5 cursor-pointer">Russian</li>
+              <li class="h5 cursor-pointer">English</li>
             </ul>
           </div>
         </div>
@@ -76,7 +86,7 @@
       </div>
     </header>
     <nav class="nav__mobile">
-      <ul class="menu__mobile width-100">
+      <ul class="menu__mobile w-100">
         <li class="menu__list">
           <a href="./shop.html" class="text-uppercase">shop</a>
         </li>
@@ -97,273 +107,272 @@
       </ul>
     </nav>
     <main>
-      <section class="section__productDetail section">
+      <section class="section__productName section">
         <div class="container">
-          <div class="productDetail__link d-flex align-items-center">
-            <p class="text-uppercase">home</p>
-            <img src="./img/Ellipse.svg" alt="DECARLO" />
-            <p class="text-uppercase">ring</p>
-            <img src="./img/Ellipse.svg" alt="DECARLO" />
-            <p class="text-uppercase">product name</p>
+          <div class="productName__link">
+            <p class="text-uppercase d-flex align-items-center">
+              Home
+              <img class="pl-15 pr-15" src="./img/Ellipse.svg" alt="DECARLO" />
+              ring
+              <img class="pl-15 pr-15" src="./img/Ellipse.svg" alt="DECARLO" />
+              product name
+            </p>
           </div>
-          <div class="productDetail__buy">
-            <div class="row">
-              <div class="col col-md-6 col-sm-1">
-                <div class="buy__img">
-                  <img src="./img/buy.jpg" alt="DECARLO" />
+          <div class="productName__buy d-grid w-100">
+            <div class="productName__buy-img">
+              <div class="component__img w-100">
+                <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
+              </div>
+              <div class="productName__img-list d-grid">
+                <div class="component__img w-100">
+                  <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
+                </div>
+                <div class="component__img w-100">
+                  <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
+                </div>
+                <div class="component__img w-100">
+                  <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
+                </div>
+                <div class="component__img w-100">
+                  <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
+                </div>
+              </div>
+            </div>
+            <div class="productName__buy-content">
+              <h2 class="h1 text-uppercase">PRODUCT NAME</h2>
+              <p class="buy__content-price pt-20 pb-50">$99.99</p>
+              <div
+                class="d-flex justify-content-between align-items-center pb-20"
+              >
+                <p class="text-uppercase buy__content-size fw-600">size</p>
+                <p class="d-flex align-items-center gray-text">
+                  <img class="pr-10" src="./img/ruler.svg" alt="DECARLO" />Find
+                  your size
+                </p>
+              </div>
+              <select
+                style="width: 100%"
+                class="form__select"
+                aria-label="Default select example"
+              >
+                <option selected>50</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div
+                class="buy__content-cart d-flex align-items-center pt-40 justify-content-between"
+              >
+                <p
+                  class="buy__btn-sort d-flex justify-content-center align-items-center"
+                >
+                  <button class="pr-40">-</button>1
+                  <button class="pl-40">+</button>
+                </p>
+                <div class="button buy__btn-add">
+                  <a
+                    href=""
+                    class="h5 button__text d-flex justify-content-center align-items-center"
+                    >ADD TO CART</a
+                  >
                 </div>
                 <div
-                  class="buy__list d-flex align-items-center justify-content-between"
+                  class="buy__btn-like d-flex justify-content-center align-items-center"
                 >
-                  <div class="buy__list-item width-100 height-100">
-                    <img
-                      class="width-100 height-100"
-                      src="./img/productWrap3.jpg"
-                      alt="DECARLO"
-                    />
-                  </div>
-                  <div class="buy__list-item">
-                    <img src="./img/productWrap3.jpg" alt="DECARLO" />
-                  </div>
-                  <div class="buy__list-item">
-                    <img src="./img/productWrap3.jpg" alt="DECARLO" />
-                  </div>
-                  <div class="buy__list-item">
-                    <img src="./img/productWrap3.jpg" alt="DECARLO" />
-                  </div>
+                  <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
               </div>
-              <div class="col col-md-6 col-sm-1">
-                <div class="productDetail__infor">
-                  <h2 class="heading text-uppercase">product name</h2>
-                  <p class="text-gray">$99.99</p>
-                  <div class="productDetail__infor-size">
-                    <div class="form__component pb-40">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <label for="exampleInputEmail1" class="text-uppercase"
-                          >TITLE</label
-                        >
-                        <p class="d-flex align-items-center">
-                          <img src="./img/ruler.svg" alt="DECARLO" />Find your
-                          size
-                        </p>
-                      </div>
-                      <select
-                        style="width: 100%"
-                        class="form__select"
-                        aria-label="Default select example"
-                      >
-                        <option selected>50</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="productDetail__addCart d-flex">
-                    <div
-                      class="addCart__sort d-flex justify-content-between align-items-center"
-                    >
-                      <p>-</p>
-                      1
-                      <p>+</p>
-                    </div>
-                    <div class="addCart__add">
-                      <a href="" class="btn btn-border">add to card</a>
-                    </div>
-                    <div class="addCart__like">
-                      <img src="./img/heart.svg" alt="DECARLO" />
-                    </div>
-                  </div>
-                  <div class="productDetail__btn-buy width-100">
-                    <a href="" class="btn btn-black">BUY NOW</a>
-                  </div>
-                  <a href="" class="btn btn-black"
-                    >GET THIS PRODUCT BY 1ST APR !</a
-                  >
-                  <p class="text-gray">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudanm, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae vitae dicta sunt explicabo
-                  </p>
-                  <p class="text-uppercase fw-600">
-                    OUR GIFT BOX EXCLUSIVELY FOR YOU
-                  </p>
-                  <img class="" src="./img/ring.jpg" alt="DECARLO" />
-                </div>
+              <div class="buy__btn-now text-center">
+                <a href="" class="text-uppercase">buy now</a>
+              </div>
+              <div class="button buy__btn-get pb-50">
+                <a href="" class="h5 button__text"
+                  >GET THIS PRODUCT BY 1ST APR !</a
+                >
+              </div>
+              <p class="buy__content-desc gray-text pb-40">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudanm, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo
+              </p>
+              <h4 class="h4 text-uppercase pb-30">
+                OUR GIFT BOX EXCLUSIVELY FOR YOU
+              </h4>
+              <div class="component__img w-100">
+                <img class="w-100 hg-100" src="./img/ring.jpg" alt="DECARLO" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="productDetail__tab section">
+      <section class="section__productInfo section">
         <div class="container">
-          <div class="productDetail__tab-list d-flex align-items-center">
-            <p class="productDetail__list-item text-uppercase">
-              PRODUCT INFORMATION
-            </p>
-            <p class="productDetail__list-item text-uppercase">OUR SERVICE</p>
-            <p class="productDetail__list-item text-uppercase">
-              PAYMENT METHOD
-            </p>
-          </div>
-          <div class="productDetail__info">
+          <ul class="productInfo__tab d-flex align-items-center">
+            <li class="text-uppercase active">product information</li>
+            <li class="text-uppercase pl-50 pr-50">OUR SERVICE</li>
+            <li class="text-uppercase">PAYMENT METHOD</li>
+          </ul>
+          <div class="productInfo__wrap">
             <div class="row">
-              <div class="col col-md-7 col-sm-1">
-                <p>PRODUCT INFO</p>
+              <div class="col col-lg-7 col-md-1 productInfo__wrap-item">
+                <h3 class="text-uppercase h2">PRODUCT INFO</h3>
                 <ul>
-                  <li>Sed ut perspiciatis unde omnis iste natus error sit</li>
-                  <li>Sed ut perspiciatis unde omnis iste natus error sit</li>
-                  <li>Sed ut perspiciatis unde omnis iste natus error sit</li>
-                  <li>Sed ut perspiciatis unde omnis iste natus error sit</li>
+                  <li class="gray-text pb-15">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                  </li>
+                  <li class="gray-text pb-15">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                  </li>
+                  <li class="gray-text pb-15">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                  </li>
+                  <li class="gray-text">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                  </li>
                 </ul>
               </div>
-              <div class="col col-md-5 col-sm-1">
-                <img src="./img/productInfo.jpg" alt="DECARLO" />
+              <div class="col col-lg-5 col-md-1 productInfo__wrap-img">
+                <div class="component__img w-100 hg-100">
+                  <img
+                    class="w-100 hg-100"
+                    src="./img/productInfo.jpg"
+                    alt="DECARLO"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="productDetail__product section">
+      <section class="section__product section">
         <div class="container">
-          <h2 class="heading text-center">RELATED PRODUCT</h2>
-          <div class="sc__wrap">
-            <div class="">
-              <div class="card__img relative">
+          <h2 class="h1 text-center pb-45 heading-mobile">RELATED PRODUCT</h2>
+          <div class="component__product product__wrap">
+            <div class="component__product-item">
+              <div class="relative">
                 <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
-                <div class="product__component-icon absolute cursor-pointer">
+                <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
               </div>
               <div
-                class="card__content d-flex flex-column align-items-center justify-content-center"
+                class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="product__component-title fw-600">PRODUCT NAME</p>
-                <span class="product__component-price">$99.99</span>
-                <a href="" class="product__component-btn btn btn-border"
-                  >add to card</a
-                >
+                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
+                <span class="component__product-price gray-text">$99.99</span>
+                <div class="button pt-20">
+                  <a href="" class="button__text button-border">add to card</a>
+                </div>
               </div>
             </div>
-            <div class="product__wrap-card product__component">
-              <div class="card__img relative">
+            <div class="component__product-item">
+              <div class="relative">
                 <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
-                <div class="product__component-icon absolute cursor-pointer">
+                <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
               </div>
               <div
-                class="card__content d-flex flex-column align-items-center justify-content-center"
+                class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="product__component-title fw-600">PRODUCT NAME</p>
-                <span class="product__component-price">$99.99</span>
-                <a href="" class="product__component-btn btn btn-border"
-                  >add to card</a
-                >
+                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
+                <span class="component__product-price gray-text">$99.99</span>
+                <div class="button pt-20">
+                  <a href="" class="button__text button-border">add to card</a>
+                </div>
               </div>
             </div>
-            <div class="product__wrap-card product__component">
-              <div class="card__img relative">
+            <div class="component__product-item">
+              <div class="relative">
                 <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
-                <div class="product__component-icon absolute cursor-pointer">
+                <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
               </div>
               <div
-                class="card__content d-flex flex-column align-items-center justify-content-center"
+                class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="product__component-title fw-600">PRODUCT NAME</p>
-                <span class="product__component-price">$99.99</span>
-                <a href="" class="product__component-btn btn btn-border"
-                  >add to card</a
-                >
+                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
+                <span class="component__product-price gray-text">$99.99</span>
+                <div class="button pt-20">
+                  <a href="" class="button__text button-border">add to card</a>
+                </div>
               </div>
             </div>
-            <div class="product__wrap-card product__component">
-              <div class="card__img relative">
+            <div class="component__product-item">
+              <div class="relative">
                 <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
-                <div class="product__component-icon absolute cursor-pointer">
+                <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
               </div>
               <div
-                class="card__content d-flex flex-column align-items-center justify-content-center"
+                class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="product__component-title fw-600">PRODUCT NAME</p>
-                <span class="product__component-price">$99.99</span>
-                <a href="" class="product__component-btn btn btn-border"
-                  >add to card</a
-                >
+                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
+                <span class="component__product-price gray-text">$99.99</span>
+                <div class="button pt-20">
+                  <a href="" class="button__text button-border">add to card</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section__services section">
+      <section class="section__services section bg-color">
         <div class="container">
-          <h2 class="heading text-center">OUR SERVICES</h2>
-          <div class="services__wrap d-grid">
-            <div class="services__card text-center">
-              <div class="services-icon">
-                <img src="./img/parcel.svg" alt="DECARLO" />
-              </div>
-              <h3 class="services__title fw-600">FREE SHIPPING IN ITALY</h3>
-              <p class="services-desc">
+          <h2 class="h1 text-center pb-45 heading-mobile">OUR SERVICES</h2>
+          <div class="component__services d-grid">
+            <div class="component__services-item text-center pt-50 pb-50">
+              <img src="./img/parcel.svg" alt="DECARLO" />
+              <h3 class="h4 text-uppercase pt-30">FREE SHIPPING IN ITALY</h3>
+              <p class="gray-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
               <a
                 href=""
-                class="seeMore seeMore-black d-flex align-items-center justify-content-center"
-                ><span>read more</span>
+                class="component__link d-flex align-items-center text-uppercase justify-content-center h5 cursor-pointer pt-30"
+                ><span class="pr-10">read more</span>
                 <img src="./img/arrowBlack.svg" alt="DECARLO"
               /></a>
             </div>
-            <div class="services__card text-center">
-              <div class="services-icon">
-                <img src="./img/parcel.svg" alt="DECARLO" />
-              </div>
-              <h3 class="services__title fw-600">FREE SHIPPING IN ITALY</h3>
-              <p class="services-desc">
+            <div class="component__services-item text-center pt-50 pb-50">
+              <img src="./img/parcel.svg" alt="DECARLO" />
+              <h3 class="h4 text-uppercase pt-30">FREE SHIPPING IN ITALY</h3>
+              <p class="gray-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
               <a
                 href=""
-                class="seeMore seeMore-black d-flex align-items-center justify-content-center"
-                ><span>read more</span>
+                class="component__link d-flex align-items-center text-uppercase justify-content-center h5 cursor-pointer pt-30"
+                ><span class="pr-10">read more</span>
                 <img src="./img/arrowBlack.svg" alt="DECARLO"
               /></a>
             </div>
-            <div class="services__card text-center">
-              <div class="services-icon">
-                <img src="./img/parcel.svg" alt="DECARLO" />
-              </div>
-              <h3 class="services__title fw-600">FREE SHIPPING IN ITALY</h3>
-              <p class="services-desc">
+            <div class="component__services-item text-center pt-50 pb-50">
+              <img src="./img/parcel.svg" alt="DECARLO" />
+              <h3 class="h4 text-uppercase pt-30">FREE SHIPPING IN ITALY</h3>
+              <p class="gray-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
               <a
                 href=""
-                class="seeMore seeMore-black d-flex align-items-center justify-content-center"
-                ><span>read more</span>
+                class="component__link d-flex align-items-center text-uppercase justify-content-center h5 cursor-pointer pt-30"
+                ><span class="pr-10">read more</span>
                 <img src="./img/arrowBlack.svg" alt="DECARLO"
               /></a>
             </div>
-            <div class="services__card text-center">
-              <div class="services-icon">
-                <img src="./img/parcel.svg" alt="DECARLO" />
-              </div>
-              <h3 class="services__title fw-600">FREE SHIPPING IN ITALY</h3>
-              <p class="services-desc">
+            <div class="component__services-item text-center pt-50 pb-50">
+              <img src="./img/parcel.svg" alt="DECARLO" />
+              <h3 class="h4 text-uppercase pt-30">FREE SHIPPING IN ITALY</h3>
+              <p class="gray-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
               <a
                 href=""
-                class="seeMore seeMore-black d-flex align-items-center justify-content-center"
-                ><span>read more</span>
+                class="component__link d-flex align-items-center text-uppercase justify-content-center h5 cursor-pointer pt-30"
+                ><span class="pr-10">read more</span>
                 <img src="./img/arrowBlack.svg" alt="DECARLO"
               /></a>
             </div>

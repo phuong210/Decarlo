@@ -100,8 +100,10 @@
       <h2 class="h2 text-uppercase heading-bg text-center">BECOME A DEALER</h2>
       <section class="section__official section">
         <div class="container">
-          <h1 class="h1 text-center pb-15">BECOME OFFICIAL DE CARLO DEALER</h1>
-          <p class="gray-text text-center pb-100">
+          <h1 class="h1 text-center pb-15 heading2-mobile">
+            BECOME OFFICIAL DE CARLO DEALER
+          </h1>
+          <p class="gray-text text-center pb-100 desc-mobile">
             Exclusive jewels with a contemporary design, handcrafted finished
             and able to arouse emotions
           </p>
@@ -234,25 +236,23 @@
               class="form__textarea w-100"
             ></textarea>
           </div>
-          <div class="official__check">
-            <form action="/action_page.php" method="get">
-              <div class="official__check-item pb-20">
-                <input type="checkbox" name="vehicle1" value="Bike" />
-                <label for="vehicle1">
-                  I agree to receive communications regarding exclusive offers,
-                  services and news</label
-                >
-              </div>
-              <div class="official__check-item">
-                <input type="checkbox" name="vehicle2" value="Car" />
-                <label for="vehicle2"
-                  >After reading the privacy policy , I consent to the
-                  processing of my personal data.</label
-                >
-              </div>
-            </form>
+          <div class="official__check pt-50 pb-50">
+            <label class="official__check-item relative"
+              >I agree to receive communications regarding exclusive offers,
+              services and news
+              <input class="absolute" type="checkbox" />
+              <span class="checkmark absolute"></span>
+            </label>
+            <label class="official__check-item relative pb-40"
+              >After reading the privacy policy , I consent to the processing of
+              my personal data.
+              <input class="absolute" type="checkbox" />
+              <span class="checkmark absolute"></span>
+            </label>
             <div class="button">
-              <a href="" class="h5 button__text button-black">SEND INQUIRY</a>
+              <a href="" class="h5 button__text button-black official__btn"
+                >SEND INQUIRY</a
+              >
             </div>
           </div>
         </div>
@@ -269,7 +269,7 @@
           <div class="footer__middle-list">
             <p class="h5 white-text">CUSTOMER CARE</p>
             <ul>
-              <li class="pt-30">
+              <li class="pt-30 footer__list-item">
                 <a href="" class="gray-text">Track your order</a>
               </li>
               <li>
@@ -280,7 +280,9 @@
           <div class="footer__middle-list">
             <p class="h5 white-text">LEGAL INFORMATION:</p>
             <ul>
-              <li class="pt-30 gray-text">Company name: De Carlo Nicholas</li>
+              <li class="pt-30 gray-text footer__list-item">
+                Company name: De Carlo Nicholas
+              </li>
               <li class="gray-text">VAT number: 07020260480</li>
               <li class="gray-text">REA: FI-674952</li>
               <li class="footer__address gray-text">
@@ -292,7 +294,7 @@
           <div class="footer__middle-list">
             <p class="h5 white-text">LEGAL TERMS:</p>
             <ul>
-              <li class="pt-30">
+              <li class="pt-30 footer__list-item">
                 <a href="" class="gray-text">Informazioni legali</a>
               </li>
               <li class="w-200">
@@ -306,7 +308,7 @@
           </div>
           <div class="footer__middle-list">
             <p class="h5 white-text">SUBSCRIBE FOR NEWSLETTER</p>
-            <div class="d-flex w-100 pb-70 pt-30">
+            <div class="d-flex w-100 pb-70 pt-30 footer__list-item">
               <input
                 type="text"
                 class="form-control w-100"
