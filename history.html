@@ -16,53 +16,69 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="header width-100">
+    <header class="header w-100">
       <div class="header__top">
-        <div
-          class="container-fluid top__content d-flex justify-content-between align-items-center pt-4 pb-4"
-        >
-          <p class="header__top-text">FREE SHIPPING IN ITALY</p>
-          <div class="header__lang">
+        <div class="container-fluid header__top-content white-text relative">
+          <p class="h5 text-uppercase absolute middle">
+            FREE SHIPPING IN ITALY
+          </p>
+          <div class="header__lang absolute">
             <div
               class="lang__current d-flex justify-content-between align-items-center"
             >
-              <p class="pr-3">Italian</p>
-              <img src="./img/arrow.svg" alt="DECARLO" />
+              <p class="h5 cursor-pointer">Italian</p>
+              <i
+                class="pl-075 d-flex justify-content-between align-items-center"
+                ><img
+                  class="cursor-pointer"
+                  src="./img/arrow.svg"
+                  alt="DECARLO"
+              /></i>
             </div>
             <ul class="lang__option">
-              <li>Vietnam</li>
+              <li class="h5 cursor-pointer">Vietnam</li>
+              <li class="h5 cursor-pointer">Russian</li>
+              <li class="h5 cursor-pointer">English</li>
             </ul>
           </div>
         </div>
       </div>
       <div class="header__bottom">
         <div
-          class="container-fluid bottom__content d-flex justify-content-between align-items-center"
+          class="container-fluid d-flex justify-content-between align-items-center pt-25 pb-25"
         >
-          <a href="/" class="header__bottom-logo cursor-pointer"
-            ><img src="./img/logo.svg" alt=""
+          <a href="/" class="cursor-pointer header__bottom-logo"
+            ><img class="" src="./img/logo.svg" alt=""
           /></a>
           <ul
             class="header__bottom-menu d-flex justify-content-between align-items-center flex-wrap text-uppercase cursor-pointer"
           >
-            <li class="height-100">
-              <a href="./shop.html" class="height-100">shop</a>
+            <li class="hg-100">
+              <a href="./shop.html" class="h5 pr-25 pl-25">shop</a>
             </li>
-            <li class="height-100"><a href="./history.html">our history</a></li>
-            <li class="height-100">
-              <a href="./product.html">JEWELERY PRODUCTION</a>
+            <li class="hg-100">
+              <a href="./history.html" class="h5 pr-25 pl-25">our history</a>
             </li>
-            <li class="height-100">
-              <a href="./dealer.html">BECOME A DEALER</a>
+            <li class="hg-100">
+              <a href="./product.html" class="h5 pr-25 pl-25"
+                >JEWELERY PRODUCTION</a
+              >
             </li>
-            <li class="height-100"><a href="./contact.html">CONTACT</a></li>
+            <li class="hg-100">
+              <a href="./dealer.html" class="h5 pr-25 pl-25">BECOME A DEALER</a>
+            </li>
+            <li class="hg-100">
+              <a href="./contact.html" class="h5 pr-25 pl-25">CONTACT</a>
+            </li>
           </ul>
           <div
-            class="header__bottom-icons d-flex justify-content-between align-items-center cursor-pointer"
+            class="d-flex justify-content-between align-items-center cursor-pointer"
           >
             <i><img src="./img/search.svg" alt="DECARLO" /> </i>
-            <i><img src="./img/heart.svg" alt="DECARLO" /></i>
-            <i><img src="./img/user.svg" alt="DECARLO" /> </i>
+            <i class="pl-25 pr-25"
+              ><img src="./img/heart.svg" alt="DECARLO"
+            /></i>
+            <i class="pr-25"><img src="./img/user.svg" alt="DECARLO" /> </i>
             <i><img src="./img/store.svg" alt="DECARLO" /> </i>
             <div class="btnmenu relative cursor-pointer"><span></span></div>
           </div>
@@ -70,41 +86,56 @@
       </div>
     </header>
     <nav class="nav__mobile">
-      <ul class="menu__mobile width-100">
-        <li class="menu__list"><a href="./shop.html">shop</a></li>
-        <li class="menu__list"><a href="./history.html">our history</a></li>
+      <ul class="menu__mobile w-100">
         <li class="menu__list">
-          <a href="./product.html">JEWELERY PRODUCTION</a>
+          <a href="./shop.html" class="text-uppercase">shop</a>
         </li>
-        <li class="menu__list"><a href="./dealer.html">BECOME A DEALER</a></li>
-        <li class="menu__list"><a href="./contact.html">CONTACT</a></li>
+        <li class="menu__list">
+          <a href="./history.html" class="text-uppercase">our history</a>
+        </li>
+        <li class="menu__list">
+          <a href="./product.html" class="text-uppercase"
+            >JEWELERY PRODUCTION</a
+          >
+        </li>
+        <li class="menu__list">
+          <a href="./dealer.html" class="text-uppercase">BECOME A DEALER</a>
+        </li>
+        <li class="menu__list">
+          <a href="./contact.html" class="text-uppercase">CONTACT</a>
+        </li>
       </ul>
     </nav>
     <main>
-      <h2 class="heading-bg text-center">BRAND HISTORY</h2>
+      <h2 class="h2 text-uppercase heading-bg text-center">BRAND HISTORY</h2>
       <section class="section__history">
         <div class="container">
-          <div class="history__content section">
-            <div class="relative">
-              <video width="100%" poster="./img/brandVideo.jpg" controls>
+          <div class="history__video section pl-100 pr-100">
+            <div class="relative w-100 hg-100">
+              <video
+                width="100%"
+                height="100%"
+                poster="./img/brandVideo.jpg"
+                controls
+              >
                 <source
                   src="/wp-content/uploads/video/video.mp4"
                   type="video/mp4"
                 />
               </video>
-              <i class="video__component-btn absolute cursor-pointer">
-                <img src="./img/video.svg" alt="DECARLO" />
+              <i class="absolute middle cursor-pointer">
+                <img class="w-100 hg-100" src="./img/video.svg" alt="DECARLO" />
               </i>
             </div>
-            <h2 class="hd__history hd__fs-30 text-center">
+            <h1 class="history__hd h1 text-center pt-50 pb-25">
               BIRTH OF THE BRAND
-            </h2>
-            <p class="text-gray text-center">
+            </h1>
+            <p class="gray-text text-center">
               The DE CARLO brand was born in Florence on November 7, 2019,
               thanks to the passion for precious stones that Nicholas De Carlo,
               a Florentine entrepreneur, has cultivated since he was a child.
             </p>
-            <p class="text-gray text-center">
+            <p class="gray-text text-center">
               Nicholas' goal was to launch a new line of jewelry, with a modern
               and innovative design, able to make all women feel unique and
               inimitable. All this was possible thanks to creations suitable for
@@ -120,8 +151,8 @@
             <div class="col col-lg-7 col-md-1">
               <div class="brand__card-content">
                 <img src="./img/bracelet.svg" alt="DECARLO" />
-                <h2 class="hd__history hd__fs-30 brand__card-hd">ELEGANCE</h2>
-                <p class="brand__card-desc">
+                <h2 class="brand__card-hd pt-30 pb-25">ELEGANCE</h2>
+                <p class="h5 gray-text brand__card-desc">
                   <span>DE CARLO means elegance</span><br />
                   exhibited thanks to the shining and refined stones that
                   portray the contemporary era, sensual, simple and eye-catching
@@ -131,9 +162,9 @@
               </div>
             </div>
             <div class="col col-lg-5 col-md-1 brand__img">
-              <div class="brand__card-img width-100 height-100">
+              <div class="component__img w-100 hg-100">
                 <img
-                  class="width-100 height-100"
+                  class="w-100 hg-100"
                   src="./img/brand1.jpg"
                   alt="DECARLO"
                 />
@@ -142,10 +173,10 @@
           </div>
           <div class="row align-items-center flex-row-reverse">
             <div class="col col-lg-7 col-md-1">
-              <div class="brand__card-content">
+              <div class="brand__card-content pl-70">
                 <img src="./img/diamond.svg" alt="DECARLO" />
-                <h2 class="hd__history hd__fs-30 brand__card-hd">QUALITY</h2>
-                <p class="brand__card-desc">
+                <h2 class="brand__card-hd pt-30 pb-25">QUALITY</h2>
+                <p class="h5 gray-text brand__card-desc">
                   <span>DE CARLO means quality</span><br />
                   thanks to the mastery of craftsmen with over 25 years of
                   experience in the goldsmith sector and a careful refinement of
@@ -155,9 +186,9 @@
               </div>
             </div>
             <div class="col col-lg-5 col-md-1 brand__img">
-              <div class="brand__card-img width-100 height-100">
+              <div class="component__img w-100 hg-100">
                 <img
-                  class="width-100 height-100"
+                  class="w-100 hg-100"
                   src="./img/brand2.jpg"
                   alt="DECARLO"
                 />
@@ -168,8 +199,8 @@
             <div class="col col-lg-7 col-md-1">
               <div class="brand__card-content">
                 <img src="./img/passion.svg" alt="DECARLO" />
-                <h2 class="hd__history hd__fs-30 brand__card-hd">PASSION</h2>
-                <p class="brand__card-desc">
+                <h2 class="brand__card-hd pt-30 pb-25">PASSION</h2>
+                <p class="h5 gray-text brand__card-desc">
                   <span>DE CARLO means passion</span><br />
                   The gift for the anniversary, for an important day or simply
                   to celebrate everyday life ... a whirlwind of emotions,
@@ -179,9 +210,9 @@
               </div>
             </div>
             <div class="col col-lg-5 col-md-1 brand__img">
-              <div class="brand__card-img width-100 height-100">
+              <div class="component__img w-100 hg-100">
                 <img
-                  class="width-100 height-100"
+                  class="w-100 hg-100"
                   src="./img/imgFocus.jpg"
                   alt="DECARLO"
                 />
@@ -190,72 +221,84 @@
           </div>
         </div>
       </section>
-      <section class="section__choose text-center">
+      <section class="component__banner section__choose text-center">
         <div class="container">
-          <h2 class="fw-600 isBackground-heading fs-3 choose__hd">
-            WHY CHOOSE US ?
+          <h2 class="h3 white-text text-uppercase pb-20">
+            NEW COLLECTion 2021
           </h2>
-          <p class="isBackground__desc">
+          <p class="gray-text component__banner-desc pb-30">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididu
           </p>
-          <a href="" class="choose__btn btn">BACK TO SHOPPING NOW</a>
+          <div class="button">
+            <a href="" class="h5 button__text">BACK TO SHOPPING NOW</a>
+          </div>
         </div>
       </section>
     </main>
     <footer>
       <div class="container">
-        <div class="footer__logo text-center">
-          <img src="./img/logoWhite.svg" alt="DECARLO" />
-        </div>
+        <a
+          href="/"
+          class="footer__logo pt-50 pb-50 d-flex justify-content-center align-items-center"
+          ><img src="./img/logoWhite.svg" alt="DECARLO"
+        /></a>
         <div class="footer__middle d-flex justify-content-between">
           <div class="footer__middle-list">
-            <p>CUSTOMER CARE</p>
+            <p class="h5 white-text">CUSTOMER CARE</p>
             <ul>
-              <li><a href="">Track your order</a></li>
-              <li><a href="./FAQ.html">Frequent Question</a></li>
+              <li class="pt-30">
+                <a href="" class="gray-text">Track your order</a>
+              </li>
+              <li>
+                <a href="./FAQ.html" class="gray-text">Frequent Question</a>
+              </li>
             </ul>
           </div>
           <div class="footer__middle-list">
-            <p>LEGAL INFORMATION:</p>
+            <p class="h5 white-text">LEGAL INFORMATION:</p>
             <ul>
-              <li>Company name: De Carlo Nicholas</li>
-              <li>VAT number: 07020260480</li>
-              <li>REA: FI-674952</li>
-              <li class="footer__address">
+              <li class="pt-30 gray-text">Company name: De Carlo Nicholas</li>
+              <li class="gray-text">VAT number: 07020260480</li>
+              <li class="gray-text">REA: FI-674952</li>
+              <li class="footer__address gray-text">
                 Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno
                 a Ripoli (FI), Italy
               </li>
             </ul>
           </div>
           <div class="footer__middle-list">
-            <p>LEGAL TERMS:</p>
+            <p class="h5 white-text">LEGAL TERMS:</p>
             <ul>
-              <li><a href="">Informazioni legali</a></li>
-              <li class="w-200">
-                <a href="">Condizioni generali di vendita</a>
+              <li class="pt-30">
+                <a href="" class="gray-text">Informazioni legali</a>
               </li>
-              <li><a href="">Informativa sulla privacy</a></li>
-              <li><a href="">Cookie policy</a></li>
+              <li class="w-200">
+                <a href="" class="gray-text">Condizioni generali di vendita</a>
+              </li>
+              <li>
+                <a href="" class="gray-text">Informativa sulla privacy</a>
+              </li>
+              <li><a href="" class="gray-text">Cookie policy</a></li>
             </ul>
           </div>
           <div class="footer__middle-list">
-            <p>SUBSCRIBE FOR NEWSLETTER</p>
-            <div class="footer__form d-flex width-100">
+            <p class="h5 white-text">SUBSCRIBE FOR NEWSLETTER</p>
+            <div class="d-flex w-100 pb-70 pt-30">
               <input
                 type="text"
-                class="form-control width-100"
+                class="form-control w-100"
                 placeholder="Your Email"
               />
               <button
-                class="form__btn cursor-pointer"
+                class="form__btn cursor-pointer white-text"
                 type="button"
-                id="button-addon2"
+                id=""
               >
                 Subscribe
               </button>
             </div>
-            <p class="footer__social">SOCIAL</p>
+            <p class="white-text pb-30">SOCIAL</p>
             <div class="footer__contact">
               <a href=""><img src="./img/facebook.svg" alt="DECARLO" /></a>
               <a href=""><img src="./img/instagram.svg" alt="DECARLO" /></a>
@@ -264,7 +307,7 @@
             </div>
           </div>
         </div>
-        <p class="footer__bottom text-center">
+        <p class="gray-text text-center">
           De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 -
           Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a
           Ripoli (FI), Italy

@@ -18,14 +18,12 @@
   <body>
     <header class="header width-100">
       <div class="header__top">
-        <div
-          class="container-fluid top__content d-flex justify-content-between align-items-center pt-4 pb-4"
-        >
-          <p class="header__top-text">FREE SHIPPING IN ITALY</p>
-          <div class="header__lang">
-            <div
-              class="lang__current d-flex justify-content-between align-items-center"
-            >
+        <div class="container-fluid header__top-content white-text relative">
+          <p class="h5 text-uppercase absolute middle">
+            FREE SHIPPING IN ITALY
+          </p>
+          <div class="header__lang absolute">
+            <div class="d-flex justify-content-between align-items-center">
               <p class="pr-3">Italian</p>
               <img src="./img/arrow.svg" alt="DECARLO" />
             </div>
@@ -37,32 +35,40 @@
       </div>
       <div class="header__bottom">
         <div
-          class="container-fluid bottom__content d-flex justify-content-between align-items-center"
+          class="container-fluid d-flex justify-content-between align-items-center pt-25 pb-25"
         >
-          <a href="/" class="header__bottom-logo cursor-pointer"
-            ><img src="./img/logo.svg" alt=""
+          <a href="/" class="cursor-pointer header__bottom-logo"
+            ><img class="" src="./img/logo.svg" alt=""
           /></a>
           <ul
             class="header__bottom-menu d-flex justify-content-between align-items-center flex-wrap text-uppercase cursor-pointer"
           >
-            <li class="height-100">
-              <a href="./shop.html" class="height-100">shop</a>
+            <li class="hg-100">
+              <a href="./shop.html" class="h5 pr-25 pl-25">shop</a>
             </li>
-            <li class="height-100"><a href="./history.html">our history</a></li>
-            <li class="height-100">
-              <a href="./product.html">JEWELERY PRODUCTION</a>
+            <li class="hg-100">
+              <a href="./history.html" class="h5 pr-25 pl-25">our history</a>
             </li>
-            <li class="height-100">
-              <a href="./dealer.html">BECOME A DEALER</a>
+            <li class="hg-100">
+              <a href="./product.html" class="h5 pr-25 pl-25"
+                >JEWELERY PRODUCTION</a
+              >
             </li>
-            <li class="height-100"><a href="./contact.html">CONTACT</a></li>
+            <li class="hg-100">
+              <a href="./dealer.html" class="h5 pr-25 pl-25">BECOME A DEALER</a>
+            </li>
+            <li class="hg-100">
+              <a href="./contact.html" class="h5 pr-25 pl-25">CONTACT</a>
+            </li>
           </ul>
           <div
-            class="header__bottom-icons d-flex justify-content-between align-items-center cursor-pointer"
+            class="d-flex justify-content-between align-items-center cursor-pointer"
           >
             <i><img src="./img/search.svg" alt="DECARLO" /> </i>
-            <i><img src="./img/heart.svg" alt="DECARLO" /></i>
-            <i><img src="./img/user.svg" alt="DECARLO" /> </i>
+            <i class="pl-25 pr-25"
+              ><img src="./img/heart.svg" alt="DECARLO"
+            /></i>
+            <i class="pr-25"><img src="./img/user.svg" alt="DECARLO" /> </i>
             <i><img src="./img/store.svg" alt="DECARLO" /> </i>
             <div class="btnmenu relative cursor-pointer"><span></span></div>
           </div>
@@ -71,80 +77,295 @@
     </header>
     <nav class="nav__mobile">
       <ul class="menu__mobile width-100">
-        <li class="menu__list"><a href="./shop.html">shop</a></li>
-        <li class="menu__list"><a href="./history.html">our history</a></li>
         <li class="menu__list">
-          <a href="./product.html">JEWELERY PRODUCTION</a>
+          <a href="./shop.html" class="text-uppercase">shop</a>
         </li>
-        <li class="menu__list"><a href="./dealer.html">BECOME A DEALER</a></li>
-        <li class="menu__list"><a href="./contact.html">CONTACT</a></li>
+        <li class="menu__list">
+          <a href="./history.html" class="text-uppercase">our history</a>
+        </li>
+        <li class="menu__list">
+          <a href="./product.html" class="text-uppercase"
+            >JEWELERY PRODUCTION</a
+          >
+        </li>
+        <li class="menu__list">
+          <a href="./dealer.html" class="text-uppercase">BECOME A DEALER</a>
+        </li>
+        <li class="menu__list">
+          <a href="./contact.html" class="text-uppercase">CONTACT</a>
+        </li>
       </ul>
     </nav>
     <main>
-      <section class="section__productDetail">
+      <section class="section__productDetail section">
         <div class="container">
-          <div class="productDetail__link">
+          <div class="productDetail__link d-flex align-items-center">
             <p class="text-uppercase">home</p>
             <img src="./img/Ellipse.svg" alt="DECARLO" />
             <p class="text-uppercase">ring</p>
             <img src="./img/Ellipse.svg" alt="DECARLO" />
             <p class="text-uppercase">product name</p>
           </div>
-          <div class="productDetail__buy d-grid">
-            <div class="productDetail__img width-100 height-100">
-              <img
-                class="width-100 height-100"
-                src="./img/buy.jpg"
-                alt="DECARLO"
-              />
-            </div>
-            <div class="productDetail__infor">
-              <h2 class="heading text-uppercase">product name</h2>
-              <p class="text-gray">$99.99</p>
-              <div class="productDetail__infor-size">
-                <div class="form__component pb-40">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <label for="exampleInputEmail1" class="text-uppercase"
-                      >TITLE</label
-                    >
-                    <p class="d-flex align-items-center">
-                      <img src="./img/ruler.svg" alt="DECARLO" />Find your size
-                    </p>
+          <div class="productDetail__buy">
+            <div class="row">
+              <div class="col col-md-6 col-sm-1">
+                <div class="buy__img">
+                  <img src="./img/buy.jpg" alt="DECARLO" />
+                </div>
+                <div
+                  class="buy__list d-flex align-items-center justify-content-between"
+                >
+                  <div class="buy__list-item width-100 height-100">
+                    <img
+                      class="width-100 height-100"
+                      src="./img/productWrap3.jpg"
+                      alt="DECARLO"
+                    />
                   </div>
-                  <select
-                    style="width: 100%"
-                    class="form__select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>50</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
+                  <div class="buy__list-item">
+                    <img src="./img/productWrap3.jpg" alt="DECARLO" />
+                  </div>
+                  <div class="buy__list-item">
+                    <img src="./img/productWrap3.jpg" alt="DECARLO" />
+                  </div>
+                  <div class="buy__list-item">
+                    <img src="./img/productWrap3.jpg" alt="DECARLO" />
+                  </div>
                 </div>
               </div>
-              <div class="productDetail__addCart d-grid">
-                <div class="addCart__sort"><p>1</p></div>
-                <div class="addCart__add">
-                  <a href="" class="btn btn-border">add to card</a>
+              <div class="col col-md-6 col-sm-1">
+                <div class="productDetail__infor">
+                  <h2 class="heading text-uppercase">product name</h2>
+                  <p class="text-gray">$99.99</p>
+                  <div class="productDetail__infor-size">
+                    <div class="form__component pb-40">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <label for="exampleInputEmail1" class="text-uppercase"
+                          >TITLE</label
+                        >
+                        <p class="d-flex align-items-center">
+                          <img src="./img/ruler.svg" alt="DECARLO" />Find your
+                          size
+                        </p>
+                      </div>
+                      <select
+                        style="width: 100%"
+                        class="form__select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>50</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="productDetail__addCart d-flex">
+                    <div
+                      class="addCart__sort d-flex justify-content-between align-items-center"
+                    >
+                      <p>-</p>
+                      1
+                      <p>+</p>
+                    </div>
+                    <div class="addCart__add">
+                      <a href="" class="btn btn-border">add to card</a>
+                    </div>
+                    <div class="addCart__like">
+                      <img src="./img/heart.svg" alt="DECARLO" />
+                    </div>
+                  </div>
+                  <div class="productDetail__btn-buy width-100">
+                    <a href="" class="btn btn-black">BUY NOW</a>
+                  </div>
+                  <a href="" class="btn btn-black"
+                    >GET THIS PRODUCT BY 1ST APR !</a
+                  >
+                  <p class="text-gray">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudanm, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo
+                  </p>
+                  <p class="text-uppercase fw-600">
+                    OUR GIFT BOX EXCLUSIVELY FOR YOU
+                  </p>
+                  <img class="" src="./img/ring.jpg" alt="DECARLO" />
                 </div>
-                <div class="addCart__like">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="productDetail__tab section">
+        <div class="container">
+          <div class="productDetail__tab-list d-flex align-items-center">
+            <p class="productDetail__list-item text-uppercase">
+              PRODUCT INFORMATION
+            </p>
+            <p class="productDetail__list-item text-uppercase">OUR SERVICE</p>
+            <p class="productDetail__list-item text-uppercase">
+              PAYMENT METHOD
+            </p>
+          </div>
+          <div class="productDetail__info">
+            <div class="row">
+              <div class="col col-md-7 col-sm-1">
+                <p>PRODUCT INFO</p>
+                <ul>
+                  <li>Sed ut perspiciatis unde omnis iste natus error sit</li>
+                  <li>Sed ut perspiciatis unde omnis iste natus error sit</li>
+                  <li>Sed ut perspiciatis unde omnis iste natus error sit</li>
+                  <li>Sed ut perspiciatis unde omnis iste natus error sit</li>
+                </ul>
+              </div>
+              <div class="col col-md-5 col-sm-1">
+                <img src="./img/productInfo.jpg" alt="DECARLO" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="productDetail__product section">
+        <div class="container">
+          <h2 class="heading text-center">RELATED PRODUCT</h2>
+          <div class="sc__wrap">
+            <div class="">
+              <div class="card__img relative">
+                <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
+                <div class="product__component-icon absolute cursor-pointer">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
               </div>
-              <div class="productDetail__btn-buy width-100">
-                <a href="" class="btn btn-black">BUY NOW</a>
+              <div
+                class="card__content d-flex flex-column align-items-center justify-content-center"
+              >
+                <p class="product__component-title fw-600">PRODUCT NAME</p>
+                <span class="product__component-price">$99.99</span>
+                <a href="" class="product__component-btn btn btn-border"
+                  >add to card</a
+                >
               </div>
-              <a href="" class="btn btn-black">GET THIS PRODUCT BY 1ST APR !</a>
-              <p class="text-gray">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudanm, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo
+            </div>
+            <div class="product__wrap-card product__component">
+              <div class="card__img relative">
+                <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
+                <div class="product__component-icon absolute cursor-pointer">
+                  <img src="./img/heart.svg" alt="DECARLO" />
+                </div>
+              </div>
+              <div
+                class="card__content d-flex flex-column align-items-center justify-content-center"
+              >
+                <p class="product__component-title fw-600">PRODUCT NAME</p>
+                <span class="product__component-price">$99.99</span>
+                <a href="" class="product__component-btn btn btn-border"
+                  >add to card</a
+                >
+              </div>
+            </div>
+            <div class="product__wrap-card product__component">
+              <div class="card__img relative">
+                <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
+                <div class="product__component-icon absolute cursor-pointer">
+                  <img src="./img/heart.svg" alt="DECARLO" />
+                </div>
+              </div>
+              <div
+                class="card__content d-flex flex-column align-items-center justify-content-center"
+              >
+                <p class="product__component-title fw-600">PRODUCT NAME</p>
+                <span class="product__component-price">$99.99</span>
+                <a href="" class="product__component-btn btn btn-border"
+                  >add to card</a
+                >
+              </div>
+            </div>
+            <div class="product__wrap-card product__component">
+              <div class="card__img relative">
+                <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
+                <div class="product__component-icon absolute cursor-pointer">
+                  <img src="./img/heart.svg" alt="DECARLO" />
+                </div>
+              </div>
+              <div
+                class="card__content d-flex flex-column align-items-center justify-content-center"
+              >
+                <p class="product__component-title fw-600">PRODUCT NAME</p>
+                <span class="product__component-price">$99.99</span>
+                <a href="" class="product__component-btn btn btn-border"
+                  >add to card</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__services section">
+        <div class="container">
+          <h2 class="heading text-center">OUR SERVICES</h2>
+          <div class="services__wrap d-grid">
+            <div class="services__card text-center">
+              <div class="services-icon">
+                <img src="./img/parcel.svg" alt="DECARLO" />
+              </div>
+              <h3 class="services__title fw-600">FREE SHIPPING IN ITALY</h3>
+              <p class="services-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
-              <img class="" src="./img/productClean.jpg" alt="DECARLO" />
+              <a
+                href=""
+                class="seeMore seeMore-black d-flex align-items-center justify-content-center"
+                ><span>read more</span>
+                <img src="./img/arrowBlack.svg" alt="DECARLO"
+              /></a>
+            </div>
+            <div class="services__card text-center">
+              <div class="services-icon">
+                <img src="./img/parcel.svg" alt="DECARLO" />
+              </div>
+              <h3 class="services__title fw-600">FREE SHIPPING IN ITALY</h3>
+              <p class="services-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
+              <a
+                href=""
+                class="seeMore seeMore-black d-flex align-items-center justify-content-center"
+                ><span>read more</span>
+                <img src="./img/arrowBlack.svg" alt="DECARLO"
+              /></a>
+            </div>
+            <div class="services__card text-center">
+              <div class="services-icon">
+                <img src="./img/parcel.svg" alt="DECARLO" />
+              </div>
+              <h3 class="services__title fw-600">FREE SHIPPING IN ITALY</h3>
+              <p class="services-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
+              <a
+                href=""
+                class="seeMore seeMore-black d-flex align-items-center justify-content-center"
+                ><span>read more</span>
+                <img src="./img/arrowBlack.svg" alt="DECARLO"
+              /></a>
+            </div>
+            <div class="services__card text-center">
+              <div class="services-icon">
+                <img src="./img/parcel.svg" alt="DECARLO" />
+              </div>
+              <h3 class="services__title fw-600">FREE SHIPPING IN ITALY</h3>
+              <p class="services-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
+              <a
+                href=""
+                class="seeMore seeMore-black d-flex align-items-center justify-content-center"
+                ><span>read more</span>
+                <img src="./img/arrowBlack.svg" alt="DECARLO"
+              /></a>
             </div>
           </div>
         </div>
@@ -152,57 +373,67 @@
     </main>
     <footer>
       <div class="container">
-        <div class="footer__logo text-center">
-          <img src="./img/logoWhite.svg" alt="DECARLO" />
-        </div>
+        <a
+          href="/"
+          class="footer__logo pt-50 pb-50 d-flex justify-content-center align-items-center"
+          ><img src="./img/logoWhite.svg" alt="DECARLO"
+        /></a>
         <div class="footer__middle d-flex justify-content-between">
           <div class="footer__middle-list">
-            <p>CUSTOMER CARE</p>
+            <p class="h5 white-text">CUSTOMER CARE</p>
             <ul>
-              <li><a href="">Track your order</a></li>
-              <li><a href="./FAQ.html">Frequent Question</a></li>
+              <li class="pt-30">
+                <a href="" class="gray-text">Track your order</a>
+              </li>
+              <li>
+                <a href="./FAQ.html" class="gray-text">Frequent Question</a>
+              </li>
             </ul>
           </div>
           <div class="footer__middle-list">
-            <p>LEGAL INFORMATION:</p>
+            <p class="h5 white-text">LEGAL INFORMATION:</p>
             <ul>
-              <li>Company name: De Carlo Nicholas</li>
-              <li>VAT number: 07020260480</li>
-              <li>REA: FI-674952</li>
-              <li class="footer__address">
+              <li class="pt-30 gray-text">Company name: De Carlo Nicholas</li>
+              <li class="gray-text">VAT number: 07020260480</li>
+              <li class="gray-text">REA: FI-674952</li>
+              <li class="footer__address gray-text">
                 Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno
                 a Ripoli (FI), Italy
               </li>
             </ul>
           </div>
           <div class="footer__middle-list">
-            <p>LEGAL TERMS:</p>
+            <p class="h5 white-text">LEGAL TERMS:</p>
             <ul>
-              <li><a href="">Informazioni legali</a></li>
-              <li class="w-200">
-                <a href="">Condizioni generali di vendita</a>
+              <li class="pt-30">
+                <a href="" class="gray-text">Informazioni legali</a>
               </li>
-              <li><a href="">Informativa sulla privacy</a></li>
-              <li><a href="">Cookie policy</a></li>
+              <li class="w-200">
+                <a href="" class="gray-text">Condizioni generali di vendita</a>
+              </li>
+              <li>
+                <a href="" class="gray-text">Informativa sulla privacy</a>
+              </li>
+              <li><a href="" class="gray-text">Cookie policy</a></li>
             </ul>
           </div>
           <div class="footer__middle-list">
-            <p>SUBSCRIBE FOR NEWSLETTER</p>
-            <div class="footer__form d-flex width-100">
+            <p class="h5 white-text">SUBSCRIBE FOR NEWSLETTER</p>
+            <div class="d-flex w-100 pb-70 pt-30">
               <input
                 type="text"
-                class="form-control width-100"
+                class="form-control w-100"
                 placeholder="Your Email"
               />
               <button
-                class="form__btn cursor-pointer"
+                class="form__btn cursor-pointer white-text"
                 type="button"
-                id="button-addon2"
+                id=""
               >
                 Subscribe
               </button>
             </div>
-            <p class="footer__social">SOCIAL</p>
+            <p class="white-text pb-30">SOCIAL</p>
             <div class="footer__contact">
               <a href=""><img src="./img/facebook.svg" alt="DECARLO" /></a>
               <a href=""><img src="./img/instagram.svg" alt="DECARLO" /></a>
@@ -211,7 +442,7 @@
             </div>
           </div>
         </div>
-        <p class="footer__bottom text-center">
+        <p class="gray-text text-center">
           De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 -
           Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a
           Ripoli (FI), Italy
