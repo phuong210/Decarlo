@@ -102,24 +102,45 @@ faq();
 
 // tab faq
 const faqTab = () => {
-    // let tabText = document.querySelectorAll('.faq__tab-item');
-    // let tabList = document.querySelectorAll('.faq__accordion');
-    // tabText.addEventListener('click', () => {
-    //     console.log(1);
-    // })
-    // tabText.forEach((item, index) => {
-    //     item.addEventListener('click', () => {
-    //         console.log(1);
-    //         tabText.forEach((tab) => {
-    //             tab.classList.remove('active');
-    //         })
-    //         tabList.forEach((tabs) => {
-    //             tabs.classList.remove('active');
-    //         })
-    //         item.classList.add('active');
-    //         tabList[index].classList.add('active');
-    //     })
-    // })
-    // 
+    let tabText = document.querySelectorAll('.faq__tab-item');
+    let tabList = document.querySelectorAll('.faq__accordion');
+    
+    tabText.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            console.log(1);
+            tabText.forEach((tab) => {
+                tab.classList.remove('active');
+            })
+            tabList.forEach((tabs) => {
+                tabs.classList.remove('active');
+            })
+            item.classList.add('active');
+            tabList[index].classList.add('active');
+        })
+    })
+    
 }
 faqTab();
+
+
+// tab product detail
+const productTab = () => {
+    let tabText = document.querySelectorAll('.productInfo__tab li');
+    let tabList = document.querySelectorAll('.productInfo__wrap');
+    
+    tabText.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            console.log(1);
+            tabText.forEach((tab) => {
+                tab.classList.remove('active');
+            })
+            tabList.forEach((tabs) => {
+                tabs.classList.remove('active');
+            })
+            item.classList.add('active');
+            tabList[index].classList.add('active');
+        })
+    })
+    
+}
+productTab();

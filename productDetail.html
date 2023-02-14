@@ -17,20 +17,16 @@
   </head>
   <body>
     <header class="header w-100">
-      <div class="header__top">
-        <div
-          class="container-fluid header__top-content white-text d-flex justify-content-between"
-        >
-          <div class="header__top-item"></div>
-          <div class="h5 text-uppercase header__top-hd relative">
-            <p class="">FREE SHIPPING IN ITALY</p>
-          </div>
-          <div class="header__lang">
+      <div class="header__top relative">
+        <div class="container-fluid">
+          <div
+            class="header__lang d-flex align-items-center justify-content-end"
+          >
             <div
               class="lang__current d-flex justify-content-between align-items-center relative"
             >
-              <p class="h5 cursor-pointer">Italian</p>
-              <i class="pl-10 d-flex justify-content-between align-items-center"
+              <p class="pl-10 pr-10 h5 cursor-pointer white-text">Italian</p>
+              <i class="d-flex justify-content-between align-items-center"
                 ><img
                   class="cursor-pointer"
                   src="./img/arrow.svg"
@@ -43,6 +39,11 @@
               <li class="h5 cursor-pointer">English</li>
             </ul>
           </div>
+          <p
+            class="h5 text-uppercase white-text absolute middle header__top-text"
+          >
+            FREE SHIPPING IN ITALY
+          </p>
         </div>
       </div>
       <div class="header__bottom pt-25 pb-25">
@@ -109,49 +110,48 @@
       </ul>
     </nav>
     <main>
-      <section class="section__productName section">
+      <section class="section__productName pt-100">
         <div class="container">
           <div class="productName__link">
-            <p class="text-uppercase d-flex align-items-center">
-              Home
+            <div class="text-uppercase d-flex align-items-center">
+              <p>Home</p>
               <img class="pl-15 pr-15" src="./img/Ellipse.svg" alt="DECARLO" />
-              ring
+              <p>ring</p>
               <img class="pl-15 pr-15" src="./img/Ellipse.svg" alt="DECARLO" />
-              product name
-            </p>
+              <p class="active">product name</p>
+            </div>
           </div>
           <div class="productName__buy w-100 d-grid">
             <div class="productName__buy-img">
               <img class="w-100" src="./img/buy.jpg" alt="DECARLO" />
-              <!-- <div class="component__img w-100">
-                <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
-              </div> -->
-              <div class="productName__img-list d-grid">
-                <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
-                <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
-                <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
-                <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
-                <!-- <div class="component__img w-100">
-                  
-                </div> -->
-                <!-- <div class="component__img w-100">
+              <div class="productName__img-wrap mt-20 relative">
+                <div class="productName__img-list d-grid">
+                  <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
+                  <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
+                  <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
                   <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
                 </div>
-                <div class="component__img w-100">
-                  <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
+                <div class="">
+                  <img
+                    class="absolute middle-Y cursor-pointer productName__icon-left"
+                    src="./img/prevArrow.svg"
+                    alt="DECARLO"
+                  />
+                  <img
+                    class="absolute middle-Y productName__icon-right cursor-pointer"
+                    src="./img/nextArrow.svg"
+                    alt="DECARLO"
+                  />
                 </div>
-                <div class="component__img w-100">
-                  <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
-                </div> -->
               </div>
             </div>
             <div class="productName__buy-content">
               <h2 class="h1 text-uppercase">PRODUCT NAME</h2>
-              <p class="buy__content-price pt-20 pb-50">$99.99</p>
+              <p class="buy__content-price h1 pt-20 pb-50 fw-400">$99.99</p>
               <div
                 class="d-flex justify-content-between align-items-center pb-20"
               >
-                <p class="text-uppercase buy__content-size fw-600">size</p>
+                <p class="text-uppercase h4 buy__content-size fw-600">size</p>
                 <p class="d-flex align-items-center gray-text">
                   <img class="pr-10" src="./img/ruler.svg" alt="DECARLO" />Find
                   your size
@@ -168,9 +168,11 @@
                 <option value="3">Three</option>
               </select>
               <div
-                class="buy__content-cart d-flex align-items-center pt-40 justify-content-between"
+                class="buy__content-cart d-flex align-items-center justify-content-between pt-40"
               >
-                <p class="buy__btn-sort">
+                <p
+                  class="buy__btn-sort d-flex align-items-center justify-content-between h4 fw-400"
+                >
                   <button class="pr-40">-</button>1
                   <button class="pl-40">+</button>
                 </p>
@@ -188,7 +190,7 @@
                 </div>
               </div>
               <div class="buy__btn-now text-center">
-                <a href="" class="text-uppercase">buy now</a>
+                <a href="" class="text-uppercase h5 white-text">buy now</a>
               </div>
               <div class="button buy__btn-get pb-50">
                 <a href="" class="h5 button__text"
@@ -211,14 +213,18 @@
           </div>
         </div>
       </section>
-      <section class="section__productInfo section">
+      <section class="section__productInfo pt-100 pb-80">
         <div class="container">
           <ul class="productInfo__tab d-flex align-items-center">
-            <li class="text-uppercase active">product information</li>
-            <li class="text-uppercase pl-50 pr-50">OUR SERVICE</li>
-            <li class="text-uppercase">PAYMENT METHOD</li>
+            <li class="text-uppercase cursor-pointer active">
+              product information
+            </li>
+            <li class="text-uppercase pl-50 pr-50 cursor-pointer">
+              OUR SERVICE
+            </li>
+            <li class="text-uppercase cursor-pointer">PAYMENT METHOD</li>
           </ul>
-          <div class="productInfo__wrap">
+          <div class="productInfo__wrap active">
             <div class="row">
               <div class="col col-lg-7 col-md-1 productInfo__wrap-item">
                 <h3 class="text-uppercase h2">PRODUCT INFO</h3>
@@ -248,15 +254,57 @@
               </div>
             </div>
           </div>
+          <div class="productInfo__wrap">
+            <div class="row">
+              <div class="col col-lg-7 col-md-1 productInfo__wrap-item">
+                <h3 class="text-uppercase h2">PRODUCT INFO</h3>
+                <ul>
+                  <li class="gray-text pb-15">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                  </li>
+                </ul>
+              </div>
+              <div class="col col-lg-5 col-md-1 productInfo__wrap-img">
+                <div class="component__img w-100 hg-100">
+                  <img
+                    class="w-100 hg-100"
+                    src="./img/productInfo.jpg"
+                    alt="DECARLO"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="productInfo__wrap">
+            <div class="row">
+              <div class="col col-lg-7 col-md-1 productInfo__wrap-item">
+                <h3 class="text-uppercase h2">PRODUCT INFO</h3>
+                <ul>
+                  <li class="gray-text pb-15">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                  </li>
+                </ul>
+              </div>
+              <div class="col col-lg-5 col-md-1 productInfo__wrap-img">
+                <div class="component__img w-100 hg-100">
+                  <img
+                    class="w-100 hg-100"
+                    src="./img/productInfo.jpg"
+                    alt="DECARLO"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section__product section">
         <div class="container">
-          <h2 class="h1 text-center pb-45 heading-mobile">RELATED PRODUCT</h2>
+          <h2 class="h1 text-center pb-45">RELATED PRODUCT</h2>
           <div class="component__product product__wrap">
             <div class="component__product-item">
               <div class="relative">
-                <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
+                <img class="w-100" src="./img/product.jpg" alt="DECARLO" />
                 <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
@@ -273,7 +321,7 @@
             </div>
             <div class="component__product-item">
               <div class="relative">
-                <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
+                <img class="w-100" src="./img/product.jpg" alt="DECARLO" />
                 <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
@@ -290,7 +338,7 @@
             </div>
             <div class="component__product-item">
               <div class="relative">
-                <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
+                <img class="w-100" src="./img/product.jpg" alt="DECARLO" />
                 <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
@@ -307,7 +355,7 @@
             </div>
             <div class="component__product-item">
               <div class="relative">
-                <img class="width-100" src="./img/product.jpg" alt="DECARLO" />
+                <img class="w-100" src="./img/product.jpg" alt="DECARLO" />
                 <div class="component__product-icon absolute">
                   <img src="./img/heart.svg" alt="DECARLO" />
                 </div>
@@ -327,7 +375,7 @@
       </section>
       <section class="section__services section bg-color">
         <div class="container">
-          <h2 class="h1 text-center pb-45 heading-mobile">OUR SERVICES</h2>
+          <h2 class="h1 text-center pb-45">OUR SERVICES</h2>
           <div class="component__services d-grid">
             <div class="component__services-item text-center pt-50 pb-50">
               <img src="./img/parcel.svg" alt="DECARLO" />
@@ -392,11 +440,11 @@
           class="footer__logo pt-50 pb-50 d-flex justify-content-center align-items-center"
           ><img src="./img/logoWhite.svg" alt="DECARLO"
         /></a>
-        <div class="footer__middle d-flex justify-content-between">
+        <div class="footer__middle d-flex justify-content-between pt-70 pb-70">
           <div class="footer__middle-list">
             <p class="h5 white-text">CUSTOMER CARE</p>
             <ul>
-              <li class="pt-30">
+              <li class="pt-30 footer__list-item pb-15">
                 <a href="" class="gray-text">Track your order</a>
               </li>
               <li>
@@ -407,9 +455,11 @@
           <div class="footer__middle-list">
             <p class="h5 white-text">LEGAL INFORMATION:</p>
             <ul>
-              <li class="pt-30 gray-text">Company name: De Carlo Nicholas</li>
-              <li class="gray-text">VAT number: 07020260480</li>
-              <li class="gray-text">REA: FI-674952</li>
+              <li class="pt-30 gray-text footer__list-item pb-15">
+                Company name: De Carlo Nicholas
+              </li>
+              <li class="gray-text pb-15">VAT number: 07020260480</li>
+              <li class="gray-text pb-15">REA: FI-674952</li>
               <li class="footer__address gray-text">
                 Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno
                 a Ripoli (FI), Italy
@@ -419,13 +469,13 @@
           <div class="footer__middle-list">
             <p class="h5 white-text">LEGAL TERMS:</p>
             <ul>
-              <li class="pt-30">
+              <li class="pt-30 footer__list-item pb-15">
                 <a href="" class="gray-text">Informazioni legali</a>
               </li>
-              <li class="w-200">
+              <li class="w-200 pb-15">
                 <a href="" class="gray-text">Condizioni generali di vendita</a>
               </li>
-              <li>
+              <li class="pb-15">
                 <a href="" class="gray-text">Informativa sulla privacy</a>
               </li>
               <li><a href="" class="gray-text">Cookie policy</a></li>
@@ -433,14 +483,14 @@
           </div>
           <div class="footer__middle-list">
             <p class="h5 white-text">SUBSCRIBE FOR NEWSLETTER</p>
-            <div class="d-flex w-100 pb-70 pt-30">
+            <div class="d-flex w-100 pb-70 pt-30 footer__list-item">
               <input
                 type="text"
-                class="form-control w-100"
+                class="form-control w-100 h5"
                 placeholder="Your Email"
               />
               <button
-                class="form__btn cursor-pointer white-text"
+                class="h5 form__btn cursor-pointer white-text"
                 type="button"
                 id=""
               >
@@ -450,8 +500,15 @@
             <p class="white-text pb-30">SOCIAL</p>
             <div class="footer__contact">
               <a href=""><img src="./img/facebook.svg" alt="DECARLO" /></a>
-              <a href=""><img src="./img/instagram.svg" alt="DECARLO" /></a>
-              <a href=""><img src="./img/linkedin.svg" alt="DECARLO" /></a>
+              <a href=""
+                ><img
+                  class="pl-15 pr-15"
+                  src="./img/instagram.svg"
+                  alt="DECARLO"
+              /></a>
+              <a href=""
+                ><img class="pr-15" src="./img/linkedin.svg" alt="DECARLO"
+              /></a>
               <a href=""><img src="./img/youtube.svg" alt="DECARLO" /></a>
             </div>
           </div>

@@ -17,20 +17,16 @@
   </head>
   <body>
     <header class="header w-100">
-      <div class="header__top">
-        <div
-          class="container-fluid header__top-content white-text d-flex justify-content-between"
-        >
-          <div class="header__top-item"></div>
-          <div class="h5 text-uppercase header__top-hd relative">
-            <p class="">FREE SHIPPING IN ITALY</p>
-          </div>
-          <div class="header__lang">
+      <div class="header__top relative">
+        <div class="container-fluid">
+          <div
+            class="header__lang d-flex align-items-center justify-content-end"
+          >
             <div
               class="lang__current d-flex justify-content-between align-items-center relative"
             >
-              <p class="h5 cursor-pointer">Italian</p>
-              <i class="pl-10 d-flex justify-content-between align-items-center"
+              <p class="pl-10 pr-10 h5 cursor-pointer white-text">Italian</p>
+              <i class="d-flex justify-content-between align-items-center"
                 ><img
                   class="cursor-pointer"
                   src="./img/arrow.svg"
@@ -43,6 +39,11 @@
               <li class="h5 cursor-pointer">English</li>
             </ul>
           </div>
+          <p
+            class="h5 text-uppercase white-text absolute middle header__top-text"
+          >
+            FREE SHIPPING IN ITALY
+          </p>
         </div>
       </div>
       <div class="header__bottom pt-25 pb-25">
@@ -110,12 +111,12 @@
     </nav>
     <main>
       <h2 class="h2 text-uppercase heading-bg text-center">CONTACT US</h2>
-      <section class="section">
+      <section class="section section__contact">
         <div class="container">
-          <h1 class="h1 text-center pb-15 heading2-mobile">
+          <h1 class="h1 text-center pb-15">
             OUR CONSULTANTS WILL BE HAPPY TO HELP YOU
           </h1>
-          <p class="gray-text text-center pb-50 desc-mobile">
+          <p class="gray-text text-center pb-50 section__contact-desc">
             Before contacting us we recommend that you read
             <span class="text-line">the frequently asked questions</span>
           </p>
@@ -146,7 +147,7 @@
             >
               <img src="./img/chat.svg" alt="DECARLO" />
               <h3 class="text-uppercase h4 pt-30">CHAT WITH US</h3>
-              <p class="gray-text">800 987 654/p></p>
+              <p class="gray-text">800 987 654</p>
             </div>
           </div>
           <h3 class="h4 text-center pt-80 pb-15 contact__desc">
@@ -164,11 +165,11 @@
           class="footer__logo pt-50 pb-50 d-flex justify-content-center align-items-center"
           ><img src="./img/logoWhite.svg" alt="DECARLO"
         /></a>
-        <div class="footer__middle d-flex justify-content-between">
+        <div class="footer__middle d-flex justify-content-between pt-70 pb-70">
           <div class="footer__middle-list">
             <p class="h5 white-text">CUSTOMER CARE</p>
             <ul>
-              <li class="pt-30 footer__list-item">
+              <li class="pt-30 footer__list-item pb-15">
                 <a href="" class="gray-text">Track your order</a>
               </li>
               <li>
@@ -179,11 +180,11 @@
           <div class="footer__middle-list">
             <p class="h5 white-text">LEGAL INFORMATION:</p>
             <ul>
-              <li class="pt-30 gray-text footer__list-item">
+              <li class="pt-30 gray-text footer__list-item pb-15">
                 Company name: De Carlo Nicholas
               </li>
-              <li class="gray-text">VAT number: 07020260480</li>
-              <li class="gray-text">REA: FI-674952</li>
+              <li class="gray-text pb-15">VAT number: 07020260480</li>
+              <li class="gray-text pb-15">REA: FI-674952</li>
               <li class="footer__address gray-text">
                 Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno
                 a Ripoli (FI), Italy
@@ -193,13 +194,13 @@
           <div class="footer__middle-list">
             <p class="h5 white-text">LEGAL TERMS:</p>
             <ul>
-              <li class="pt-30 footer__list-item">
+              <li class="pt-30 footer__list-item pb-15">
                 <a href="" class="gray-text">Informazioni legali</a>
               </li>
-              <li class="w-200">
+              <li class="w-200 pb-15">
                 <a href="" class="gray-text">Condizioni generali di vendita</a>
               </li>
-              <li>
+              <li class="pb-15">
                 <a href="" class="gray-text">Informativa sulla privacy</a>
               </li>
               <li><a href="" class="gray-text">Cookie policy</a></li>
@@ -210,11 +211,11 @@
             <div class="d-flex w-100 pb-70 pt-30 footer__list-item">
               <input
                 type="text"
-                class="form-control w-100"
+                class="form-control w-100 h5"
                 placeholder="Your Email"
               />
               <button
-                class="form__btn cursor-pointer white-text"
+                class="h5 form__btn cursor-pointer white-text"
                 type="button"
                 id=""
               >
@@ -224,8 +225,15 @@
             <p class="white-text pb-30">SOCIAL</p>
             <div class="footer__contact">
               <a href=""><img src="./img/facebook.svg" alt="DECARLO" /></a>
-              <a href=""><img src="./img/instagram.svg" alt="DECARLO" /></a>
-              <a href=""><img src="./img/linkedin.svg" alt="DECARLO" /></a>
+              <a href=""
+                ><img
+                  class="pl-15 pr-15"
+                  src="./img/instagram.svg"
+                  alt="DECARLO"
+              /></a>
+              <a href=""
+                ><img class="pr-15" src="./img/linkedin.svg" alt="DECARLO"
+              /></a>
               <a href=""><img src="./img/youtube.svg" alt="DECARLO" /></a>
             </div>
           </div>
