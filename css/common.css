@@ -376,6 +376,54 @@
 }
 
 /* component img-video */
+/* ex */
+/* .component-video {
+    width: 500px;
+    height: 500px;
+} */
+/* ex */
+/* .component__video-link {
+    display: none;
+}
+.component__video-link.active {
+    display: block;
+}
+.component__video-link iframe {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.boxclose {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: var(--black1-cl);
+    border-radius: 50%;
+    bottom: 135px;
+    left: 72%;
+    transform: translateX(-72%);
+    z-index: 2;
+}
+.boxclose span {
+    position: absolute;
+    z-index: 3;
+    width: 25px;
+    height: 2px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    background: var(--white);
+}
+.boxclose span::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    z-index: 3;
+    height: 2px;
+    background: var(--white);
+    transform: rotate(90deg);
+} */
+/*  */
 @media screen and (max-width: 767px) {
     .component__video-icon {
         width: 28px;
@@ -595,4 +643,78 @@ textarea::placeholder {
 .cardImg__desc {
     color: var(--gray2-cl);
     line-height: 1.7;
+}
+
+/* popup video */
+.popup-video {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 800;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+.popup-video.active {
+    display: flex;
+}
+.popup-video .item {
+    width: 100%;
+    max-width: 800px;
+    /* 9:16 = 0.5625 */
+    max-height: 450px;
+    height: 100%;
+    position: relative;
+    background: var(--white);
+    border: 2px solid #eee;
+}
+.popup-video .item iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.popup-video .item .close {
+    display: flex;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: var(--black1-cl);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup-video .item .close::before,
+.popup-video .item .close::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background: var(--white);
+    top: 20px;
+    display: block;
+}
+.popup-video .item .close::before {
+    transform: rotate(-45deg);
+}
+.popup-video .item .close::after {
+    transform: rotate(45deg);
+}
+@media screen and (max-width: 767px) {
+    .popup-video {
+        padding: 2rem;
+    }
+    .popup-video .item {
+        max-height: 300px;
+    }
 }

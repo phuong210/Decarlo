@@ -26,21 +26,21 @@ body {
 }
 .container-fluid {
     width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 5rem;
+    padding-right: 5rem;
     margin-left: auto;
     margin-right: auto;
 }
 @media screen and (max-width: 767px) {
     .container-fluid {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 }
 .container {
     max-width: 1210px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -597,7 +597,6 @@ input.form-control:focus {
     background: var(--bg-gray);
 }
 
-/*  */
 .productName__buy-img {
     width: 100%;
     height: 100%;
@@ -726,7 +725,6 @@ input.form-control:focus {
 /* ==========page faq=============== */
 .faq__tab {
     padding-bottom: 6rem;
-    overflow-x: scroll;
 }
 .faq__tab-item {
     width: 100%;
@@ -736,7 +734,6 @@ input.form-control:focus {
     position: relative;
     font-size: 22px;
     line-height: 1.5;
-    flex: 0 0 40%;
 }
 .faq__tab-item:hover {
     color: var(--black1-cl);
@@ -828,12 +825,14 @@ input.form-control:focus {
 @media screen and (max-width: 767px) {
     .faq__tab {
         padding-bottom: 3.7rem;
+        overflow-x: scroll;
     }
     .faq__tab-item {
         font-size: 18px;
         line-height: 1.5;
         padding-left: 0;
         padding-right: 0;
+        flex: 0 0 40%;
     }
     .faq__accordion-item {
         padding-top: 2rem;

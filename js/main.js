@@ -165,3 +165,27 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";
   dots[slideIndex-1].style.opacity = "1";
 }
+
+// popup video
+const popupVideo = () => {
+    let btnVideo = document.querySelector('.component__card-icon');
+    let popupVideo = document.querySelector('.popup-video');
+    let closeVideo = document.querySelector('.popup-video .close');
+    let iframe = document.querySelector('.popup-video iframe');
+
+    btnVideo.addEventListener('click', () => {
+        let idVideo = btnVideo.getAttribute('data-video-id');
+            iframe.setAttribute('src', `https://www.youtube.com/embed/${idVideo}?autoplay=1`);
+            popupVideo.classList.add('active');
+    })
+    closeVideo.addEventListener('click', () => {
+        iframe.setAttribute('src', '');
+        popupVideo.classList.remove('active');
+    })
+
+    document.querySelector('.popup-video').addEventListener('click', () => {
+        iframe.setAttribute('src', '');
+        popupVideo.classList.remove('active');
+    })
+}
+popupVideo();

@@ -203,22 +203,18 @@
       <section class="section__video section">
         <div class="container">
           <div class="component__card">
-            <div class="relative">
-              <video
-                class="objectFit"
-                width="100%"
-                height="100%"
-                poster="./img/imgFocus.jpg"
-                controls
+            <div class="relative w-100 hg-100">
+              <img
+                class="w-100 hg-100 objectFit"
+                src="./img/imgFocus.jpg"
+                alt="DECARLO"
+              />
+              <div
+                class="absolute middle cursor-pointer component__video-icon component__card-icon"
+                data-video-id="CfPxlb8-ZQ0"
               >
-                <source
-                  src="/wp-content/uploads/video/video.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <i class="absolute middle cursor-pointer">
-                <img src="./img/video.svg" alt="DECARLO" />
-              </i>
+                <img class="w-100 hg-100" src="./img/video.svg" alt="DECARLO" />
+              </div>
             </div>
             <div class="component__card-content w-100 hg-100">
               <div class="card__content">
@@ -237,6 +233,21 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="popup-video">
+        <div class="item">
+          <iframe
+            width="100%"
+            height="100%"
+            src=""
+            title="YouTube video player"
+            frameborder="0"
+            allow="autoplay"
+            allowfullscreen
+          ></iframe>
+
+          <div class="close"></div>
         </div>
       </section>
       <section class="section__product section">
