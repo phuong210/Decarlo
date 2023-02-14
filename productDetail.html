@@ -18,24 +18,26 @@
   <body>
     <header class="header w-100">
       <div class="header__top">
-        <div class="container-fluid header__top-content white-text relative">
-          <p class="h5 text-uppercase absolute middle">
-            FREE SHIPPING IN ITALY
-          </p>
-          <div class="header__lang absolute">
+        <div
+          class="container-fluid header__top-content white-text d-flex justify-content-between"
+        >
+          <div class="header__top-item"></div>
+          <div class="h5 text-uppercase header__top-hd relative">
+            <p class="">FREE SHIPPING IN ITALY</p>
+          </div>
+          <div class="header__lang">
             <div
-              class="lang__current d-flex justify-content-between align-items-center"
+              class="lang__current d-flex justify-content-between align-items-center relative"
             >
               <p class="h5 cursor-pointer">Italian</p>
-              <i
-                class="pl-075 d-flex justify-content-between align-items-center"
+              <i class="pl-10 d-flex justify-content-between align-items-center"
                 ><img
                   class="cursor-pointer"
                   src="./img/arrow.svg"
                   alt="DECARLO"
               /></i>
             </div>
-            <ul class="lang__option">
+            <ul class="lang__option absolute">
               <li class="h5 cursor-pointer">Vietnam</li>
               <li class="h5 cursor-pointer">Russian</li>
               <li class="h5 cursor-pointer">English</li>
@@ -43,9 +45,9 @@
           </div>
         </div>
       </div>
-      <div class="header__bottom">
+      <div class="header__bottom pt-25 pb-25">
         <div
-          class="container-fluid d-flex justify-content-between align-items-center pt-25 pb-25"
+          class="container-fluid d-flex justify-content-between align-items-center"
         >
           <a href="/" class="cursor-pointer header__bottom-logo"
             ><img class="" src="./img/logo.svg" alt=""
@@ -118,13 +120,21 @@
               product name
             </p>
           </div>
-          <div class="productName__buy d-grid w-100">
+          <div class="productName__buy w-100 d-grid">
             <div class="productName__buy-img">
-              <div class="component__img w-100">
+              <img class="w-100" src="./img/buy.jpg" alt="DECARLO" />
+              <!-- <div class="component__img w-100">
                 <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
-              </div>
+              </div> -->
               <div class="productName__img-list d-grid">
-                <div class="component__img w-100">
+                <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
+                <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
+                <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
+                <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
+                <!-- <div class="component__img w-100">
+                  
+                </div> -->
+                <!-- <div class="component__img w-100">
                   <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
                 </div>
                 <div class="component__img w-100">
@@ -132,10 +142,7 @@
                 </div>
                 <div class="component__img w-100">
                   <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
-                </div>
-                <div class="component__img w-100">
-                  <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="productName__buy-content">
@@ -163,9 +170,7 @@
               <div
                 class="buy__content-cart d-flex align-items-center pt-40 justify-content-between"
               >
-                <p
-                  class="buy__btn-sort d-flex justify-content-center align-items-center"
-                >
+                <p class="buy__btn-sort">
                   <button class="pr-40">-</button>1
                   <button class="pl-40">+</button>
                 </p>
