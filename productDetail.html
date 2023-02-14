@@ -123,15 +123,67 @@
           </div>
           <div class="productName__buy w-100 d-grid">
             <div class="productName__buy-img">
-              <img class="w-100" src="./img/buy.jpg" alt="DECARLO" />
+              <img
+                class="w-100 buy__slider"
+                src="./img/buy.jpg"
+                alt="DECARLO"
+              />
+              <img
+                class="w-100 buy__slider"
+                style="display: none"
+                src="./img/brand1.jpg"
+                alt="DECARLO"
+              />
+              <img
+                class="w-100 buy__slider"
+                style="display: none"
+                src="./img/brand2.jpg"
+                alt="DECARLO"
+              />
+              <img
+                class="w-100 buy__slider"
+                style="display: none"
+                src="./img/category3.jpg"
+                alt="DECARLO"
+              />
+
               <div class="productName__img-wrap mt-20 relative">
                 <div class="productName__img-list d-grid">
-                  <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
-                  <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
-                  <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
-                  <img class="w-100 hg-100" src="./img/buy.jpg" alt="DECARLO" />
+                  <div class="productName__img-item">
+                    <img
+                      class="w-100 hg-100 buy__slider-item"
+                      src="./img/buy.jpg"
+                      alt="DECARLO"
+                      onclick="currentDiv(1)"
+                      style="opacity: 1"
+                    />
+                  </div>
+                  <div class="w-100 hg-100 productName__img-item">
+                    <img
+                      class="w-100 hg-100 buy__slider-item"
+                      src="./img/brand1.jpg"
+                      alt="DECARLO"
+                      onclick="currentDiv(2)"
+                    />
+                  </div>
+                  <div class="w-100 hg-100 productName__img-item">
+                    <img
+                      class="w-100 hg-100 buy__slider-item"
+                      src="./img/brand2.jpg"
+                      alt="DECARLO"
+                      onclick="currentDiv(3)"
+                    />
+                  </div>
+                  <div class="w-100 hg-100 productName__img-item">
+                    <img
+                      class="w-100 hg-100 buy__slider-item"
+                      src="./img/category3.jpg"
+                      alt="DECARLO"
+                      onclick="currentDiv(4)"
+                    />
+                  </div>
                 </div>
-                <div class="">
+                <div class="productName__img-icon">
                   <img
                     class="absolute middle-Y cursor-pointer productName__icon-left"
                     src="./img/prevArrow.svg"
@@ -299,7 +351,7 @@
         </div>
       </section>
       <section class="section__product section">
-        <div class="container">
+        <div class="container section__product-content">
           <h2 class="h1 text-center pb-45">RELATED PRODUCT</h2>
           <div class="component__product product__wrap">
             <div class="component__product-item">

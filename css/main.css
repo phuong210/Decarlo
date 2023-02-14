@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: "Lato";
-    color: #171719;
+    color: var(--black1-cl);
     font-size: 14px;
     letter-spacing: 2px;
     margin: auto;
@@ -216,6 +216,9 @@ main {
 
 /* section product */
 @media screen and (max-width: 767px) {
+    .section__product-content {
+        padding-right: 0;
+    }
     .section__product h2 {
         padding-bottom: 2.5rem;
     }
@@ -549,8 +552,9 @@ input.form-control:focus {
     gap: 10rem;
 }
 .productName__img-list {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    overflow-x: auto scroll;
 }
 .productName__icon-left {
     left: 8px;
@@ -592,6 +596,21 @@ input.form-control:focus {
 .buy__btn-get a {
     background: var(--bg-gray);
 }
+
+/*  */
+.productName__buy-img {
+    width: 100%;
+    height: 100%;
+}
+.buy__slider {
+    object-fit: cover;
+    height: 70%;
+}
+.buy__slider-item {
+    opacity: 0.5;
+    object-fit: cover;
+}
+/*  */
 @media screen and (max-width: 767px) {
     .section__productName {
         padding-top: 4rem;
@@ -673,6 +692,7 @@ input.form-control:focus {
 .productInfo__wrap-item h3 {
     padding-bottom: 3.5rem;
 }
+
 @media screen and (max-width: 767px) {
     .section__productInfo {
         padding-bottom: 4rem;
