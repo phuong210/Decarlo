@@ -42,24 +42,6 @@ const langHandle = () => {
 }
 langHandle();
 
-// header fixed
-// let header = document.querySelector('.header');
-
-// const bgHeader = () => {
-//     let heightHeader = header.clientHeight;
-//     let slider = document.querySelector('.section__slider');
-//     let heightSlider = slider.clientHeight;
-//     window.addEventListener('scroll', () => {
-//         if (window.pageYOffset >= (heightHeader)) {
-//         header.classList.add('active');
-//         }
-//         else {
-//             header.classList.remove('active');
-//         }
-//     })
-// }
-// bgHeader();
-
 // slider
 const slider = () => {
     let listItemSlider = document.querySelectorAll('.slider__item');
