@@ -25,7 +25,7 @@
             <div
               class="lang__current d-flex justify-content-between align-items-center relative"
             >
-              <p class="pl-10 pr-10 h5 cursor-pointer white-text">Italian</p>
+              <p class="pr-10 h5 cursor-pointer white-text">Italian</p>
               <i class="d-flex justify-content-between align-items-center"
                 ><img
                   class="cursor-pointer"
@@ -46,12 +46,12 @@
           </p>
         </div>
       </div>
-      <div class="header__bottom pt-25 pb-25">
+      <div class="header__bottom pt-20 pb-20">
         <div
           class="container-fluid d-flex justify-content-between align-items-center"
         >
           <a href="/" class="cursor-pointer header__bottom-logo"
-            ><img class="" src="./img/logo.svg" alt=""
+            ><img src="./img/logo.svg" alt="DECARLO"
           /></a>
           <ul
             class="header__bottom-menu d-flex justify-content-between align-items-center flex-wrap text-uppercase cursor-pointer"
@@ -74,17 +74,23 @@
               <a href="./contact.html" class="h5 pr-25 pl-25">CONTACT</a>
             </li>
           </ul>
-          <div
-            class="d-flex justify-content-between align-items-center cursor-pointer"
+          <ul
+            class="d-flex justify-content-between align-items-center header__bottom-icons"
           >
-            <i><img src="./img/search.svg" alt="DECARLO" /> </i>
-            <i class="pl-25 pr-25"
-              ><img src="./img/heart.svg" alt="DECARLO"
-            /></i>
-            <i class="pr-25"><img src="./img/user.svg" alt="DECARLO" /> </i>
-            <i><img src="./img/store.svg" alt="DECARLO" /> </i>
-            <div class="btnmenu relative cursor-pointer"><span></span></div>
-          </div>
+            <li>
+              <a href=""><img src="./img/search.svg" alt="DECARLO" /></a>
+            </li>
+            <li class="pl-25 pr-25">
+              <a href=""><img src="./img/heart.svg" alt="DECARLO" /></a>
+            </li>
+            <li class="pr-25">
+              <a href=""><img src="./img/user.svg" alt="DECARLO" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./img/store.svg" alt="DECARLO" /></a>
+            </li>
+            <p class="btnmenu relative cursor-pointer"><span></span></p>
+          </ul>
         </div>
       </div>
     </header>
@@ -114,128 +120,108 @@
       <section class="section__official section">
         <div class="container">
           <h1 class="h1 text-center pb-15">BECOME OFFICIAL DE CARLO DEALER</h1>
-          <p class="gray-text text-center pb-100 desc-mobile">
+          <p class="gray-text text-center pb-100 section__official-desc">
             Exclusive jewels with a contemporary design, handcrafted finished
             and able to arouse emotions
           </p>
-          <div class="official__form">
-            <div class="row official__form-item">
-              <div class="col col-md-6 col-sm-1 pd-20">
-                <div class="official__col">
-                  <div class="component-select pb-40">
-                    <label for="" class="h4 text-uppercase">TITLE</label>
-                    <select class="form__select w-100">
-                      <option selected>Miss</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                  <div class="">
-                    <label for="" class="h4 text-uppercase">SUR NAME*</label>
-                    <input
-                      type="text"
-                      class="form__input w-100"
-                      placeholder="Insert your surname"
-                    />
-                  </div>
-                </div>
+          <div class="official__form d-grid">
+            <div class="official__col">
+              <div class="component-select pb-40">
+                <label for="" class="h4 text-uppercase">TITLE</label>
+                <select class="form__select w-100">
+                  <option selected>Miss</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
               </div>
-              <div class="col col-md-6 col-sm-1 pd-20">
-                <div class="official__col">
-                  <div class="pb-40">
-                    <label for="" class="h4 text-uppercase">FIRST NAME*</label>
-                    <input
-                      type="text"
-                      class="form__input w-100"
-                      placeholder="Insert your name"
-                    />
-                  </div>
-                  <label for="" class="h4 text-uppercase">EMAIL*</label>
-                  <input
-                    type="email"
-                    class="form__input width-100"
-                    placeholder="Insert your email"
-                  />
-                </div>
+              <div class="">
+                <label for="" class="h4 text-uppercase">SUR NAME*</label>
+                <input
+                  type="text"
+                  class="form__input w-100"
+                  placeholder="Insert your surname"
+                />
+              </div>
+            </div>
+            <div class="official__col">
+              <div class="pb-40">
+                <label for="" class="h4 text-uppercase">FIRST NAME*</label>
+                <input
+                  type="text"
+                  class="form__input w-100"
+                  placeholder="Insert your name"
+                />
+              </div>
+              <div class="">
+                <label for="" class="h4 text-uppercase">EMAIL*</label>
+                <input
+                  type="email"
+                  class="form__input w-100"
+                  placeholder="Insert your email"
+                />
               </div>
             </div>
           </div>
-          <div class="official__form">
-            <div class="row official__form-item">
-              <div class="col col-md-6 col-sm-1 pd-20">
-                <div class="official__col">
-                  <div class="pb-40">
-                    <label for="" class="h4 text-uppercase">PHONE</label>
-                    <input
-                      type="text"
-                      class="form__input w-100"
-                      placeholder="Insert your phone"
-                    />
-                  </div>
-                  <div class="">
-                    <label for="" class="h4 text-uppercase">COMPANY</label>
-                    <input
-                      type="text"
-                      class="form__input w-100"
-                      placeholder="Insert your company here"
-                    />
-                  </div>
-                </div>
+          <div class="official__form d-grid pt-40">
+            <div class="official__col">
+              <div class="pb-40">
+                <label for="" class="h4 text-uppercase">PHONE</label>
+                <input
+                  type="text"
+                  class="form__input w-100"
+                  placeholder="Insert your phone"
+                />
               </div>
-              <div class="col col-md-6 col-sm-1 pd-20">
-                <div class="official__col">
-                  <div class="pb-40">
-                    <label for="" class="h4 text-uppercase">CITY</label>
-                    <input
-                      type="text"
-                      class="form__input w-100"
-                      placeholder="Insert your city"
-                    />
-                  </div>
-                  <div class="component-select">
-                    <label for="" class="h4 text-uppercase">PROVINCE</label>
-                    <select class="form__select w-100">
-                      <option selected>Agriento</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                </div>
+              <div class="">
+                <label for="" class="h4 text-uppercase">COMPANY</label>
+                <input
+                  type="text"
+                  class="form__input w-100"
+                  placeholder="Insert your company here"
+                />
+              </div>
+            </div>
+            <div class="official__col">
+              <div class="pb-40">
+                <label for="" class="h4 text-uppercase">CITY</label>
+                <input
+                  type="text"
+                  class="form__input w-100"
+                  placeholder="Insert your city"
+                />
+              </div>
+              <div class="component-select">
+                <label for="" class="h4 text-uppercase">PROVINCE</label>
+                <select class="form__select w-100">
+                  <option selected>Agriento</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
               </div>
             </div>
           </div>
-          <div class="official__form">
-            <div class="row official__form-item">
-              <div class="col col-md-6 col-sm-1 pd-20">
-                <div class="official__col">
-                  <div class="">
-                    <label for="" class="h4 text-uppercase">VAT NUMBER</label>
-                    <input
-                      type="text"
-                      class="form__input w-100"
-                      placeholder="Insert your VAT number"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col col-md-6 col-sm-1 pd-20">
-                <div class="official__col">
-                  <div class="component-select">
-                    <label for="" class="h4 text-uppercase">REQUEST</label>
-                    <select class="form__select w-100">
-                      <option selected>Dealer</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
+          <div class="official__form d-grid pt-40">
+            <div class="">
+              <label for="" class="h4 text-uppercase">VAT NUMBER</label>
+              <input
+                type="text"
+                class="form__input w-100"
+                placeholder="Insert your VAT number"
+              />
+            </div>
+            <div class="component-select">
+              <label for="" class="h4 text-uppercase">REQUEST</label>
+              <select class="form__select w-100">
+                <option selected>Dealer</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
             </div>
           </div>
-          <div class="form__component-textarea pt-20">
+          <div class="form__component-textarea pt-40">
             <label for="" class="h4 text-uppercase">MESSAGE</label>
 
             <textarea
@@ -247,14 +233,14 @@
               class="form__textarea w-100"
             ></textarea>
           </div>
-          <div class="official__check pt-50 pb-50">
+          <div class="official__check pt-50">
             <label class="official__check-item h5 relative cursor-pointer"
               >I agree to receive communications regarding exclusive offers,
               services and news
               <input class="absolute" type="checkbox" />
               <span class="checkmark absolute"></span>
             </label>
-            <label class="official__check-item h5 relative pb-40 cursor-pointer"
+            <label class="official__check-item h5 relative pb-50 cursor-pointer"
               >After reading the privacy policy , I consent to the processing of
               my personal data.
               <input class="absolute" type="checkbox" />

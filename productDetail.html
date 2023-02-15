@@ -25,7 +25,7 @@
             <div
               class="lang__current d-flex justify-content-between align-items-center relative"
             >
-              <p class="pl-10 pr-10 h5 cursor-pointer white-text">Italian</p>
+              <p class="pr-10 h5 cursor-pointer white-text">Italian</p>
               <i class="d-flex justify-content-between align-items-center"
                 ><img
                   class="cursor-pointer"
@@ -46,7 +46,7 @@
           </p>
         </div>
       </div>
-      <div class="header__bottom pt-25 pb-25">
+      <div class="header__bottom pt-20 pb-20">
         <div
           class="container-fluid d-flex justify-content-between align-items-center"
         >
@@ -74,17 +74,23 @@
               <a href="./contact.html" class="h5 pr-25 pl-25">CONTACT</a>
             </li>
           </ul>
-          <div
-            class="d-flex justify-content-between align-items-center cursor-pointer"
+          <ul
+            class="d-flex justify-content-between align-items-center header__bottom-icons"
           >
-            <i><img src="./img/search.svg" alt="DECARLO" /> </i>
-            <i class="pl-25 pr-25"
-              ><img src="./img/heart.svg" alt="DECARLO"
-            /></i>
-            <i class="pr-25"><img src="./img/user.svg" alt="DECARLO" /> </i>
-            <i><img src="./img/store.svg" alt="DECARLO" /> </i>
-            <div class="btnmenu relative cursor-pointer"><span></span></div>
-          </div>
+            <li>
+              <a href=""><img src="./img/search.svg" alt="DECARLO" /></a>
+            </li>
+            <li class="pl-25 pr-25">
+              <a href=""><img src="./img/heart.svg" alt="DECARLO" /></a>
+            </li>
+            <li class="pr-25">
+              <a href=""><img src="./img/user.svg" alt="DECARLO" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./img/store.svg" alt="DECARLO" /></a>
+            </li>
+            <p class="btnmenu relative cursor-pointer"><span></span></p>
+          </ul>
         </div>
       </div>
     </header>
@@ -121,41 +127,27 @@
               <p class="active">product name</p>
             </div>
           </div>
-          <div class="productName__buy w-100 d-grid">
+          <div class="productName__buy d-grid">
             <div class="productName__buy-img">
               <img
-                class="w-100 buy__slider"
+                class="w-100 buy__slider objectFit"
                 src="./img/buy.jpg"
                 alt="DECARLO"
               />
               <img
-                class="w-100 buy__slider"
+                class="w-100 buy__slider objectFit"
                 style="display: none"
                 src="./img/brand1.jpg"
                 alt="DECARLO"
               />
               <img
-                class="w-100 buy__slider"
+                class="w-100 buy__slider objectFit"
                 style="display: none"
                 src="./img/brand2.jpg"
                 alt="DECARLO"
               />
-              <!-- <div class="relative w-100 hg-100 productName__img-item">
-                <img
-                  class="w-100 buy__slider"
-                  src="./img/imgFocus.jpg"
-                  alt="DECARLO"
-                  onclick="currentDiv(4)"
-                />
-                <div
-                  class="absolute middle cursor-pointer component__card-icon"
-                  data-video-id="CfPxlb8-ZQ0"
-                >
-                  <img src="./img/video.svg" alt="DECARLO" />
-                </div>
-              </div> -->
               <img
-                class="w-100 buy__slider"
+                class="w-100 buy__slider objectFit"
                 style="display: none"
                 src="./img/category3.jpg"
                 alt="DECARLO"
@@ -163,53 +155,32 @@
 
               <div class="productName__img-wrap mt-20 relative">
                 <div class="productName__img-list d-grid">
-                  <div class="productName__img-item">
-                    <img
-                      class="w-100 hg-100 buy__slider-item"
-                      src="./img/buy.jpg"
-                      alt="DECARLO"
-                      onclick="currentDiv(1)"
-                      style="opacity: 1"
-                    />
-                  </div>
-                  <div class="w-100 hg-100 productName__img-item">
-                    <img
-                      class="w-100 hg-100 buy__slider-item"
-                      src="./img/brand1.jpg"
-                      alt="DECARLO"
-                      onclick="currentDiv(2)"
-                    />
-                  </div>
-                  <div class="w-100 hg-100 productName__img-item">
-                    <img
-                      class="w-100 hg-100 buy__slider-item"
-                      src="./img/brand2.jpg"
-                      alt="DECARLO"
-                      onclick="currentDiv(3)"
-                    />
-                  </div>
-                  <div class="w-100 hg-100 productName__img-item">
-                    <img
-                      class="w-100 hg-100 buy__slider-item"
-                      src="./img/category3.jpg"
-                      alt="DECARLO"
-                      onclick="currentDiv(4)"
-                    />
-                  </div>
-                  <!-- <div class="relative w-100 hg-100 productName__img-item">
-                    <img
-                      class="w-100 hg-100 buy__slider-item"
-                      src="./img/imgFocus.jpg"
-                      alt="DECARLO"
-                      onclick="currentDiv(4)"
-                    />
-                    <div
-                      class="absolute middle cursor-pointer component__card-icon"
-                      data-video-id="CfPxlb8-ZQ0"
-                    >
-                      <img src="./img/video.svg" alt="DECARLO" />
-                    </div>
-                  </div> -->
+                  <img
+                    class="w-100 hg-100 buy__slider-item"
+                    src="./img/buy.jpg"
+                    alt="DECARLO"
+                    onclick="currentDiv(1)"
+                    style="opacity: 1"
+                  />
+                  <img
+                    class="w-100 hg-100 buy__slider-item"
+                    src="./img/brand1.jpg"
+                    alt="DECARLO"
+                    onclick="currentDiv(2)"
+                  />
+                  <img
+                    class="w-100 hg-100 buy__slider-item"
+                    src="./img/brand2.jpg"
+                    alt="DECARLO"
+                    onclick="currentDiv(3)"
+                  />
+
+                  <img
+                    class="w-100 hg-100 buy__slider-item"
+                    src="./img/category3.jpg"
+                    alt="DECARLO"
+                    onclick="currentDiv(4)"
+                  />
                 </div>
                 <div class="productName__img-icon">
                   <img
@@ -299,7 +270,7 @@
             <li class="text-uppercase cursor-pointer active">
               product information
             </li>
-            <li class="text-uppercase pl-50 pr-50 cursor-pointer">
+            <li class="text-uppercase ml-50 mr-50 cursor-pointer">
               OUR SERVICE
             </li>
             <li class="text-uppercase cursor-pointer">PAYMENT METHOD</li>

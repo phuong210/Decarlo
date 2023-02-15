@@ -19,27 +19,25 @@
     <header class="header w-100">
       <div class="header__top relative">
         <div class="container-fluid">
-          <div class="header__top-lang">
+          <div
+            class="header__lang d-flex align-items-center justify-content-end"
+          >
             <div
-              class="header__lang d-flex align-items-center justify-content-end"
+              class="lang__current d-flex justify-content-between align-items-center relative"
             >
-              <div
-                class="lang__current d-flex justify-content-between align-items-center relative"
-              >
-                <p class="pl-10 pr-10 h5 cursor-pointer white-text">Italian</p>
-                <i class="d-flex justify-content-between align-items-center"
-                  ><img
-                    class="cursor-pointer"
-                    src="./img/arrow.svg"
-                    alt="DECARLO"
-                /></i>
-              </div>
-              <ul class="lang__option absolute">
-                <li class="h5 cursor-pointer">Vietnam</li>
-                <li class="h5 cursor-pointer">Russian</li>
-                <li class="h5 cursor-pointer">English</li>
-              </ul>
+              <p class="pr-10 h5 cursor-pointer white-text">Italian</p>
+              <i class="d-flex justify-content-between align-items-center"
+                ><img
+                  class="cursor-pointer"
+                  src="./img/arrow.svg"
+                  alt="DECARLO"
+              /></i>
             </div>
+            <ul class="lang__option absolute">
+              <li class="h5 cursor-pointer">Vietnam</li>
+              <li class="h5 cursor-pointer">Russian</li>
+              <li class="h5 cursor-pointer">English</li>
+            </ul>
           </div>
           <p
             class="h5 text-uppercase white-text absolute middle header__top-text"
@@ -48,12 +46,12 @@
           </p>
         </div>
       </div>
-      <div class="header__bottom pt-25 pb-25">
+      <div class="header__bottom pt-20 pb-20">
         <div
           class="container-fluid d-flex justify-content-between align-items-center"
         >
           <a href="/" class="cursor-pointer header__bottom-logo"
-            ><img class="" src="./img/logo.svg" alt=""
+            ><img src="./img/logo.svg" alt="DECARLO"
           /></a>
           <ul
             class="header__bottom-menu d-flex justify-content-between align-items-center flex-wrap text-uppercase cursor-pointer"
@@ -76,17 +74,23 @@
               <a href="./contact.html" class="h5 pr-25 pl-25">CONTACT</a>
             </li>
           </ul>
-          <div
-            class="d-flex justify-content-between align-items-center cursor-pointer"
+          <ul
+            class="d-flex justify-content-between align-items-center header__bottom-icons"
           >
-            <i><img src="./img/search.svg" alt="DECARLO" /> </i>
-            <i class="pl-25 pr-25"
-              ><img src="./img/heart.svg" alt="DECARLO"
-            /></i>
-            <i class="pr-25"><img src="./img/user.svg" alt="DECARLO" /> </i>
-            <i><img src="./img/store.svg" alt="DECARLO" /> </i>
-            <div class="btnmenu relative cursor-pointer"><span></span></div>
-          </div>
+            <li>
+              <a href=""><img src="./img/search.svg" alt="DECARLO" /></a>
+            </li>
+            <li class="pl-25 pr-25">
+              <a href=""><img src="./img/heart.svg" alt="DECARLO" /></a>
+            </li>
+            <li class="pr-25">
+              <a href=""><img src="./img/user.svg" alt="DECARLO" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./img/store.svg" alt="DECARLO" /></a>
+            </li>
+            <p class="btnmenu relative cursor-pointer"><span></span></p>
+          </ul>
         </div>
       </div>
     </header>
@@ -115,7 +119,7 @@
       <section class="component__banner shop__banner">
         <div class="container">
           <h2 class="h3 white-text text-uppercase pb-20">RING</h2>
-          <p class="gray-text component__banner-desc pb-30 shop__banner-desc">
+          <p class="gray-text component__banner-desc shop__banner-desc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             <span>sed do eiusmod tempor incididu</span>
           </p>
@@ -137,7 +141,6 @@
                   >SORT BY :</label
                 >
                 <select
-                  style="width: 100%"
                   class="shop__select fw-600"
                   aria-label="Default select example"
                 >
@@ -161,8 +164,10 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
-                <span class="component__product-price gray-text">$99.99</span>
+                <p class="h4 pt-20 pb-10 text-center">PRODUCT NAME</p>
+                <span class="component__product-price gray-text text-center"
+                  >$99.99</span
+                >
                 <div class="button pt-20">
                   <a href="" class="button__text button-border">add to card</a>
                 </div>
@@ -178,8 +183,10 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
-                <span class="component__product-price gray-text">$99.99</span>
+                <p class="h4 pt-20 pb-10 text-center">PRODUCT NAME</p>
+                <span class="component__product-price gray-text text-center"
+                  >$99.99</span
+                >
                 <div class="button pt-20">
                   <a href="" class="button__text button-border">add to card</a>
                 </div>
@@ -195,8 +202,10 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
-                <span class="component__product-price gray-text">$99.99</span>
+                <p class="h4 pt-20 pb-10 text-center">PRODUCT NAME</p>
+                <span class="component__product-price gray-text text-center"
+                  >$99.99</span
+                >
                 <div class="button pt-20">
                   <a href="" class="button__text button-border">add to card</a>
                 </div>
@@ -212,8 +221,10 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
-                <span class="component__product-price gray-text">$99.99</span>
+                <p class="h4 pt-20 pb-10 text-center">PRODUCT NAME</p>
+                <span class="component__product-price gray-text text-center"
+                  >$99.99</span
+                >
                 <div class="button pt-20">
                   <a href="" class="button__text button-border">add to card</a>
                 </div>
@@ -229,8 +240,10 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
-                <span class="component__product-price gray-text">$99.99</span>
+                <p class="h4 pt-20 pb-10 text-center">PRODUCT NAME</p>
+                <span class="component__product-price gray-text text-center"
+                  >$99.99</span
+                >
                 <div class="button pt-20">
                   <a href="" class="button__text button-border">add to card</a>
                 </div>
@@ -246,8 +259,10 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
-                <span class="component__product-price gray-text">$99.99</span>
+                <p class="h4 pt-20 pb-10 text-center">PRODUCT NAME</p>
+                <span class="component__product-price gray-text text-center"
+                  >$99.99</span
+                >
                 <div class="button pt-20">
                   <a href="" class="button__text button-border">add to card</a>
                 </div>
@@ -263,8 +278,10 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
-                <span class="component__product-price gray-text">$99.99</span>
+                <p class="h4 pt-20 pb-10 text-center">PRODUCT NAME</p>
+                <span class="component__product-price gray-text text-center"
+                  >$99.99</span
+                >
                 <div class="button pt-20">
                   <a href="" class="button__text button-border">add to card</a>
                 </div>
@@ -280,8 +297,10 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center"
               >
-                <p class="h4 pt-20 pb-10">PRODUCT NAME</p>
-                <span class="component__product-price gray-text">$99.99</span>
+                <p class="h4 pt-20 pb-10 text-center">PRODUCT NAME</p>
+                <span class="component__product-price gray-text text-center"
+                  >$99.99</span
+                >
                 <div class="button pt-20">
                   <a href="" class="button__text button-border">add to card</a>
                 </div>

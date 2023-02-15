@@ -89,8 +89,17 @@
 .mt-20 {
     margin-top: 2rem;
 }
+.ml-50 {
+    margin-left: 5rem;
+}
+.mr-50 {
+    margin-right: 5rem;
+}
 .pl-0 {
     padding-left: 0;
+}
+.pr-0 {
+    padding-right: 0;
 }
 .pl-075 {
     padding-left: 0.75rem;
@@ -146,8 +155,14 @@
 .pt-30 {
     padding-top: 3rem;
 }
+.pr-30 {
+    padding-right: 3rem;
+}
 .pb-30 {
     padding-bottom: 3rem;
+}
+.pl-30 {
+    padding-left: 3rem;
 }
 .pt-40 {
     padding-top: 4rem;
@@ -163,6 +178,9 @@
 }
 .pb-45 {
     padding-bottom: 4.5rem;
+}
+.pd-50 {
+    padding: 5rem;
 }
 .pt-50 {
     padding-top: 5rem;
@@ -354,23 +372,22 @@
     background: var(--bg-gray);
 }
 .card__content {
-    padding-inline: 9rem;
-}
-.card__content-hd {
-    padding-top: 13.3rem;
+    padding: 14.8rem 9rem;
 }
 .card__content-btn {
-    padding-top: 6rem;
+    padding-top: 7rem;
 }
 @media screen and (max-width: 991px) {
     .component__card {
         grid-template-columns: repeat(1, 1fr);
     }
     .card__content {
-        padding-inline: 3rem;
-        padding-bottom: 6rem;
+        padding: 6rem 3rem 9rem 3rem;
     }
     .card__content-hd {
+        padding-bottom: 2rem;
+    }
+    .card__content-btn {
         padding-top: 6rem;
     }
 }
@@ -456,11 +473,6 @@
     background-size: cover;
     padding-top: 18.5rem;
     padding-bottom: 18.5rem;
-}
-@media screen and (max-width: 767px) {
-    .component__banner h2 {
-        padding-bottom: 0.5rem;
-    }
 }
 
 /* component services */
