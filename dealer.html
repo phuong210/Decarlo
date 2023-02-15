@@ -89,7 +89,7 @@
             <li>
               <a href=""><img src="./img/store.svg" alt="DECARLO" /></a>
             </li>
-            <p class="btnmenu relative cursor-pointer"><span></span></p>
+            <li class="btnmenu relative cursor-pointer"><span></span></li>
           </ul>
         </div>
       </div>
@@ -127,7 +127,7 @@
           <div class="official__form d-grid">
             <div class="official__col">
               <div class="component-select pb-40">
-                <label for="" class="h4 text-uppercase">TITLE</label>
+                <label class="h4 text-uppercase">TITLE</label>
                 <select class="form__select w-100">
                   <option selected>Miss</option>
                   <option value="1">One</option>
@@ -136,8 +136,9 @@
                 </select>
               </div>
               <div class="">
-                <label for="" class="h4 text-uppercase">SUR NAME*</label>
+                <label for="surname" class="h4 text-uppercase">SUR NAME*</label>
                 <input
+                  id="surname"
                   type="text"
                   class="form__input w-100"
                   placeholder="Insert your surname"
@@ -146,16 +147,18 @@
             </div>
             <div class="official__col">
               <div class="pb-40">
-                <label for="" class="h4 text-uppercase">FIRST NAME*</label>
+                <label for="name" class="h4 text-uppercase">FIRST NAME*</label>
                 <input
+                  id="name"
                   type="text"
                   class="form__input w-100"
                   placeholder="Insert your name"
                 />
               </div>
               <div class="">
-                <label for="" class="h4 text-uppercase">EMAIL*</label>
+                <label for="email" class="h4 text-uppercase">EMAIL*</label>
                 <input
+                  id="email"
                   type="email"
                   class="form__input w-100"
                   placeholder="Insert your email"
@@ -166,16 +169,18 @@
           <div class="official__form d-grid pt-40">
             <div class="official__col">
               <div class="pb-40">
-                <label for="" class="h4 text-uppercase">PHONE</label>
+                <label for="phone" class="h4 text-uppercase">PHONE</label>
                 <input
+                  id="phone"
                   type="text"
                   class="form__input w-100"
                   placeholder="Insert your phone"
                 />
               </div>
               <div class="">
-                <label for="" class="h4 text-uppercase">COMPANY</label>
+                <label for="company" class="h4 text-uppercase">COMPANY</label>
                 <input
+                  id="company"
                   type="text"
                   class="form__input w-100"
                   placeholder="Insert your company here"
@@ -184,15 +189,16 @@
             </div>
             <div class="official__col">
               <div class="pb-40">
-                <label for="" class="h4 text-uppercase">CITY</label>
+                <label for="city" class="h4 text-uppercase">CITY</label>
                 <input
+                  id="city"
                   type="text"
                   class="form__input w-100"
                   placeholder="Insert your city"
                 />
               </div>
               <div class="component-select">
-                <label for="" class="h4 text-uppercase">PROVINCE</label>
+                <label class="h4 text-uppercase">PROVINCE</label>
                 <select class="form__select w-100">
                   <option selected>Agriento</option>
                   <option value="1">One</option>
@@ -204,15 +210,16 @@
           </div>
           <div class="official__form d-grid pt-40">
             <div class="">
-              <label for="" class="h4 text-uppercase">VAT NUMBER</label>
+              <label for="vat" class="h4 text-uppercase">VAT NUMBER</label>
               <input
+                id="vat"
                 type="text"
                 class="form__input w-100"
                 placeholder="Insert your VAT number"
               />
             </div>
             <div class="component-select">
-              <label for="" class="h4 text-uppercase">REQUEST</label>
+              <label class="h4 text-uppercase">REQUEST</label>
               <select class="form__select w-100">
                 <option selected>Dealer</option>
                 <option value="1">One</option>
@@ -222,11 +229,10 @@
             </div>
           </div>
           <div class="form__component-textarea pt-40">
-            <label for="" class="h4 text-uppercase">MESSAGE</label>
-
+            <label for="message" class="h4 text-uppercase">MESSAGE</label>
             <textarea
-              name=""
-              id=""
+              name="message"
+              id="message"
               cols="30"
               rows="10"
               placeholder="Write your message here"
@@ -247,7 +253,7 @@
               <span class="checkmark absolute"></span>
             </label>
             <div class="button">
-              <a href="" class="h5 button__text button-black official__btn"
+              <a href="#" class="h5 button__text button-black official__btn"
                 >SEND INQUIRY</a
               >
             </div>
@@ -314,7 +320,7 @@
               <button
                 class="h5 form__btn cursor-pointer white-text"
                 type="button"
-                id=""
+                id="button"
               >
                 Subscribe
               </button>
