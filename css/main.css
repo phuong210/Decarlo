@@ -279,9 +279,7 @@ main {
 }
 
 /* section collection */
-.section__services h2 {
-    padding-bottom: 2.5rem;
-}
+
 /* footer */
 footer {
     background: var(--black1-cl);
@@ -309,6 +307,9 @@ input.form-control:focus {
 }
 
 @media screen and (max-width: 767px) {
+    .section__services h2 {
+        padding-bottom: 2.5rem;
+    }
     .section__collection {
         padding-top: 7.4rem;
         padding-bottom: 7.4rem;
@@ -340,7 +341,9 @@ input.form-control:focus {
 }
 
 /* =============page history=============== */
-
+.history__video-img {
+    aspect-ratio: 16/9;
+}
 .brand__wrap {
     margin-bottom: 10rem;
 }
@@ -359,6 +362,9 @@ input.form-control:focus {
 }
 .brand__item {
     padding: 0;
+}
+.brand__item-img {
+    aspect-ratio: 0.9;
 }
 /* section choose */
 .section__choose {
@@ -514,6 +520,9 @@ input.form-control:focus {
 .product__desc {
     color: var(--gray-cl);
 }
+.product__clean-img {
+    aspect-ratio: 1;
+}
 @media screen and (max-width: 767px) {
     .product__card {
         grid-template-columns: repeat(1, 1fr);
@@ -661,6 +670,9 @@ input.form-control:focus {
     opacity: 0.5;
     object-fit: cover;
 }
+.buy__img {
+    aspect-ratio: 1.7;
+}
 @media screen and (max-width: 767px) {
     .section__productName {
         padding-top: 4rem;
@@ -738,7 +750,9 @@ input.form-control:focus {
 .productInfo__wrap-item h3 {
     padding-bottom: 3.5rem;
 }
-
+.productInfo__img {
+    aspect-ratio: 1.6;
+}
 @media screen and (max-width: 767px) {
     .section__productInfo {
         padding-bottom: 4rem;
