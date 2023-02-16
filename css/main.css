@@ -668,7 +668,6 @@ input.form-control:focus {
 }
 .buy__slider-item {
     opacity: 0.5;
-    object-fit: cover;
 }
 .buy__img {
     aspect-ratio: 1.7;

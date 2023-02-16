@@ -146,42 +146,88 @@
                 src="./img/brand2.jpg"
                 alt="DECARLO"
               />
+              <div
+                class="relative w-100 hg-100 buy__slider"
+                style="display: none"
+              >
+                <img
+                  class="w-100 hg-100 objectFit"
+                  src="./img/imgFocus.jpg"
+                  alt="DECARLO"
+                />
+                <div
+                  class="absolute middle cursor-pointer component__video-icon component__card-icon"
+                  data-video-id="CfPxlb8-ZQ0"
+                >
+                  <img
+                    class="w-100 hg-100"
+                    src="./img/video.svg"
+                    alt="DECARLO"
+                  />
+                </div>
+              </div>
               <img
                 class="w-100 buy__slider objectFit"
                 style="display: none"
                 src="./img/category3.jpg"
                 alt="DECARLO"
               />
+              <img
+                class="w-100 buy__slider objectFit"
+                style="display: none"
+                src="./img/banner.jpg"
+                alt="DECARLO"
+              />
 
               <div class="productName__img-wrap mt-20 relative">
-                <div class="productName__img-list d-grid">
+                <div class="component__wrap d-grid">
                   <img
-                    class="w-100 hg-100 buy__slider-item"
+                    class="w-100 hg-100 objectFit component__wrap-item buy__slider-item"
                     src="./img/buy.jpg"
                     alt="DECARLO"
                     onclick="currentDiv(1)"
                     style="opacity: 1"
                   />
                   <img
-                    class="w-100 hg-100 buy__slider-item"
+                    class="w-100 hg-100 objectFit component__wrap-item buy__slider-item"
                     src="./img/brand1.jpg"
                     alt="DECARLO"
                     onclick="currentDiv(2)"
                   />
                   <img
-                    class="w-100 hg-100 buy__slider-item"
+                    class="w-100 hg-100 objectFit component__wrap-item buy__slider-item"
                     src="./img/brand2.jpg"
                     alt="DECARLO"
                     onclick="currentDiv(3)"
                   />
-
+                  <div class="relative w-100 hg-100 component__wrap-item">
+                    <img
+                      class="w-100 hg-100 objectFit buy__slider-item"
+                      src="./img/imgFocus.jpg"
+                      alt="DECARLO"
+                      onclick="currentDiv(4)"
+                    />
+                    <div
+                      class="absolute middle cursor-pointer component__video-icon"
+                      data-video-id="CfPxlb8-ZQ0"
+                    >
+                      <img class="w-30" src="./img/video.svg" alt="DECARLO" />
+                    </div>
+                  </div>
                   <img
-                    class="w-100 hg-100 buy__slider-item"
+                    class="w-100 hg-100 objectFit component__wrap-item buy__slider-item"
                     src="./img/category3.jpg"
                     alt="DECARLO"
-                    onclick="currentDiv(4)"
+                    onclick="currentDiv(5)"
+                  />
+                  <img
+                    class="w-100 hg-100 objectFit component__wrap-item buy__slider-item"
+                    src="./img/banner.jpg"
+                    alt="DECARLO"
+                    onclick="currentDiv(6)"
                   />
                 </div>
+
                 <div class="productName__img-icon">
                   <img
                     class="absolute middle-Y cursor-pointer productName__icon-left"
@@ -262,6 +308,21 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="popup-video">
+        <div class="item">
+          <iframe
+            width="100%"
+            height="100%"
+            src=""
+            title="YouTube video player"
+            frameborder="0"
+            allow="autoplay"
+            allowfullscreen
+          ></iframe>
+
+          <div class="close"></div>
         </div>
       </section>
       <section class="section__productInfo pt-100 pb-80">

@@ -164,6 +164,7 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";
   dots[slideIndex-1].style.opacity = "1";
 }
+// slider img product detail
 
 // popup video
 const popupVideo = () => {
