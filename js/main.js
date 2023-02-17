@@ -165,6 +165,35 @@ function showDivs(n) {
   dots[slideIndex-1].style.opacity = "1";
 }
 // slider img product detail
+// const imgSlider = () => {
+//     let wrap = document.querySelector('.productName__img-wrap');
+//     let btnPrev = document.querySelector('.productName__icon-left');
+//     let btnNext = document.querySelector('.productName__icon-right');
+//     let itemWidth = document.querySelectorAll('.component__wrap-item')[0].clientWidth;
+//     let items = document.querySelectorAll('.buy__slider-item');
+
+//     let position = 0;
+//     const showSlider = (element, pix, img) => {
+//         position += pix;
+//         if(position > 0) {
+//             position = -element.clientWidth + pix;
+//         }
+//         else if(position < -element.clientWidth - pix) {
+//             position = 0;
+//         }
+//         element.style.transform = "translateX(" + position +"px)";
+//         // img.style.opacity = "1";
+//     }
+//     btnNext.addEventListener("click", function() {
+//         showSlider(wrap, -itemWidth, items); 
+//         console.log(1);
+//     })
+
+//     btnPrev.addEventListener("click", function() {
+//         showSlider(wrap, itemWidth, items); 
+//     })
+// }
+// imgSlider();
 
 // popup video
 const popupVideo = () => {

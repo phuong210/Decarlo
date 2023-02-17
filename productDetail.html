@@ -128,7 +128,7 @@
             </div>
           </div>
           <div class="productName__buy d-grid">
-            <div class="productName__buy-img">
+            <div class="productName__buy-img relative">
               <img
                 class="w-100 buy__slider objectFit"
                 src="./img/buy.jpg"
@@ -179,30 +179,42 @@
                 alt="DECARLO"
               />
 
-              <div class="productName__img-wrap mt-20 relative">
+              <div class="productName__img-wrap mt-20">
+                <div class="productName__img-icon">
+                  <img
+                    class="absolute cursor-pointer productName__icon-left"
+                    src="./img/prevArrow.svg"
+                    alt="DECARLO"
+                  />
+                  <img
+                    class="absolute productName__icon-right cursor-pointer"
+                    src="./img/nextArrow.svg"
+                    alt="DECARLO"
+                  />
+                </div>
                 <div class="component__wrap d-grid">
                   <img
-                    class="w-100 hg-100 objectFit component__wrap-item buy__slider-item"
+                    class="w-100 hg-100 objectFit cursor-pointer component__wrap-item buy__slider-item"
                     src="./img/buy.jpg"
                     alt="DECARLO"
                     onclick="currentDiv(1)"
                     style="opacity: 1"
                   />
                   <img
-                    class="w-100 hg-100 objectFit component__wrap-item buy__slider-item"
+                    class="w-100 hg-100 objectFit cursor-pointer component__wrap-item buy__slider-item"
                     src="./img/brand1.jpg"
                     alt="DECARLO"
                     onclick="currentDiv(2)"
                   />
                   <img
-                    class="w-100 hg-100 objectFit component__wrap-item buy__slider-item"
+                    class="w-100 hg-100 objectFit cursor-pointer component__wrap-item buy__slider-item"
                     src="./img/brand2.jpg"
                     alt="DECARLO"
                     onclick="currentDiv(3)"
                   />
                   <div class="relative w-100 hg-100 component__wrap-item">
                     <img
-                      class="w-100 hg-100 objectFit buy__slider-item"
+                      class="w-100 hg-100 objectFit cursor-pointer buy__slider-item"
                       src="./img/imgFocus.jpg"
                       alt="DECARLO"
                       onclick="currentDiv(4)"
@@ -215,29 +227,16 @@
                     </div>
                   </div>
                   <img
-                    class="w-100 hg-100 objectFit component__wrap-item buy__slider-item"
+                    class="w-100 hg-100 objectFit cursor-pointer component__wrap-item buy__slider-item"
                     src="./img/category3.jpg"
                     alt="DECARLO"
                     onclick="currentDiv(5)"
                   />
                   <img
-                    class="w-100 hg-100 objectFit component__wrap-item buy__slider-item"
+                    class="w-100 hg-100 objectFit cursor-pointer component__wrap-item buy__slider-item"
                     src="./img/banner.jpg"
                     alt="DECARLO"
                     onclick="currentDiv(6)"
-                  />
-                </div>
-
-                <div class="productName__img-icon">
-                  <img
-                    class="absolute middle-Y cursor-pointer productName__icon-left"
-                    src="./img/prevArrow.svg"
-                    alt="DECARLO"
-                  />
-                  <img
-                    class="absolute middle-Y productName__icon-right cursor-pointer"
-                    src="./img/nextArrow.svg"
-                    alt="DECARLO"
                   />
                 </div>
               </div>
@@ -377,10 +376,10 @@
                 </ul>
               </div>
               <div class="col col-lg-5 col-md-1 productInfo__wrap-img">
-                <div class="component__img w-100 hg-100">
+                <div class="component__img w-100 hg-100 productInfo__img">
                   <img
                     class="w-100 hg-100"
-                    src="./img/productInfo.jpg"
+                    src="./img/brand2.jpg"
                     alt="DECARLO"
                   />
                 </div>
@@ -398,10 +397,10 @@
                 </ul>
               </div>
               <div class="col col-lg-5 col-md-1 productInfo__wrap-img">
-                <div class="component__img w-100 hg-100">
+                <div class="component__img w-100 hg-100 productInfo__img">
                   <img
                     class="w-100 hg-100"
-                    src="./img/productInfo.jpg"
+                    src="./img/brand1.jpg"
                     alt="DECARLO"
                   />
                 </div>
